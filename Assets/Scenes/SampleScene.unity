@@ -391,6 +391,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &7335388
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +494,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &10369800
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +681,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &14946421
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +784,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &22537484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1139,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &37815359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1326,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &50803109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1513,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &68967795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,6 +1868,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &73304933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,6 +2139,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &75220000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,8 +2171,7 @@ Transform:
   m_LocalPosition: {x: -3.996, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1782009829}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &75220002
@@ -2179,6 +2196,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!61 &75220003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2577,6 +2596,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &91080319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,6 +2867,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &98087344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +2970,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &98897530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,6 +3409,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &113156697
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,6 +3512,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &117794523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,6 +3867,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &122405776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,6 +4054,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &128985912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4124,6 +4157,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &132783763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,6 +4260,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &135293928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,6 +4363,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &136027454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4427,6 +4466,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &144087810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,6 +4653,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &147138439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4881,6 +4924,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &150782221
 GameObject:
   m_ObjectHideFlags: 0
@@ -5234,6 +5279,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &168279310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5335,6 +5382,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &187007958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,6 +5569,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &189285385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5621,6 +5672,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &192818110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,6 +5775,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &194268124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5823,6 +5878,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &195803359
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,6 +6065,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &197220379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,6 +6168,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &202415740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6210,6 +6271,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &210665592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6311,6 +6374,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &210737280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6412,6 +6477,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &211480098
 GameObject:
   m_ObjectHideFlags: 0
@@ -6526,8 +6593,7 @@ Transform:
   m_LocalPosition: {x: -3.148, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1410568359}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &215666888
@@ -6597,6 +6663,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &216323438
 GameObject:
   m_ObjectHideFlags: 0
@@ -6698,6 +6766,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &216500068
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,90 +6807,6 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216500068}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &219258394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 219258395}
-  - component: {fileID: 219258396}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &219258395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219258394}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 619900624}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &219258396
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219258394}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -7135,6 +7121,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &225720217
 GameObject:
   m_ObjectHideFlags: 0
@@ -7320,6 +7308,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &234749107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7505,6 +7495,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &262289771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7606,6 +7598,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &264182286
 GameObject:
   m_ObjectHideFlags: 0
@@ -7791,6 +7785,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &270437380
 GameObject:
   m_ObjectHideFlags: 0
@@ -7892,6 +7888,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &273048915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8077,6 +8075,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &281337733
 GameObject:
   m_ObjectHideFlags: 0
@@ -8262,90 +8262,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &287985956
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 287985957}
-  - component: {fileID: 287985958}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &287985957
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287985956}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1287615274}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &287985958
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287985956}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &288827108
 GameObject:
   m_ObjectHideFlags: 0
@@ -8447,6 +8365,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &288951934
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,6 +8636,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &293501024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8901,6 +8823,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &299259149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9002,6 +8926,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &307844992
 GameObject:
   m_ObjectHideFlags: 0
@@ -9271,6 +9197,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &316352712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,6 +9384,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &319429346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9641,6 +9571,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &321302808
 GameObject:
   m_ObjectHideFlags: 0
@@ -9826,6 +9758,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &328857687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9927,6 +9861,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &332152936
 GameObject:
   m_ObjectHideFlags: 0
@@ -10364,6 +10300,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &349841334
 GameObject:
   m_ObjectHideFlags: 0
@@ -10465,6 +10403,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &350702337
 GameObject:
   m_ObjectHideFlags: 0
@@ -10818,6 +10758,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &355212763
 GameObject:
   m_ObjectHideFlags: 0
@@ -10919,6 +10861,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &361267165
 GameObject:
   m_ObjectHideFlags: 0
@@ -11020,6 +10964,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &372860905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11373,6 +11319,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &383329089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11558,6 +11506,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &389473669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11827,6 +11777,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &399390835
 GameObject:
   m_ObjectHideFlags: 0
@@ -11928,6 +11880,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &401510811
 GameObject:
   m_ObjectHideFlags: 0
@@ -12029,6 +11983,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &406607853
 GameObject:
   m_ObjectHideFlags: 0
@@ -12130,6 +12086,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &407600035
 GameObject:
   m_ObjectHideFlags: 0
@@ -12399,6 +12357,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &410982285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12752,6 +12712,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &430908642
 GameObject:
   m_ObjectHideFlags: 0
@@ -13021,6 +12983,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &439555139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13206,6 +13170,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &445129566
 GameObject:
   m_ObjectHideFlags: 0
@@ -13559,6 +13525,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &451820322
 GameObject:
   m_ObjectHideFlags: 0
@@ -13828,6 +13796,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &453746583
 GameObject:
   m_ObjectHideFlags: 0
@@ -13929,6 +13899,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &466383696
 GameObject:
   m_ObjectHideFlags: 0
@@ -14114,6 +14086,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &471439571
 GameObject:
   m_ObjectHideFlags: 0
@@ -14299,6 +14273,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &472855537
 GameObject:
   m_ObjectHideFlags: 0
@@ -14400,6 +14376,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &474520362
 GameObject:
   m_ObjectHideFlags: 0
@@ -14501,6 +14479,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &478698964
 GameObject:
   m_ObjectHideFlags: 0
@@ -14602,6 +14582,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &479580083
 GameObject:
   m_ObjectHideFlags: 0
@@ -14703,6 +14685,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &482674741
 GameObject:
   m_ObjectHideFlags: 0
@@ -15056,6 +15040,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &496079281
 GameObject:
   m_ObjectHideFlags: 0
@@ -15157,6 +15143,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &512091509
 GameObject:
   m_ObjectHideFlags: 0
@@ -15342,6 +15330,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &514293487
 GameObject:
   m_ObjectHideFlags: 0
@@ -15703,6 +15693,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &524756658
 GameObject:
   m_ObjectHideFlags: 0
@@ -15972,6 +15964,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &539411837
 GameObject:
   m_ObjectHideFlags: 0
@@ -16157,6 +16151,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &544818838
 GameObject:
   m_ObjectHideFlags: 0
@@ -16271,8 +16267,7 @@ Transform:
   m_LocalPosition: {x: 4.3, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1879704348}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &546454163
@@ -16297,6 +16292,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 1
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!61 &546454164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16611,6 +16608,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &553115084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16712,6 +16711,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &554777948
 GameObject:
   m_ObjectHideFlags: 0
@@ -16897,6 +16898,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &562322667
 GameObject:
   m_ObjectHideFlags: 0
@@ -17082,6 +17085,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &571184437
 GameObject:
   m_ObjectHideFlags: 0
@@ -17183,6 +17188,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &572271309
 GameObject:
   m_ObjectHideFlags: 0
@@ -17368,6 +17375,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &584772576
 GameObject:
   m_ObjectHideFlags: 0
@@ -17469,6 +17478,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &586523504
 GameObject:
   m_ObjectHideFlags: 0
@@ -17654,6 +17665,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &596684550
 GameObject:
   m_ObjectHideFlags: 0
@@ -17755,6 +17768,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &601954121
 GameObject:
   m_ObjectHideFlags: 0
@@ -17856,6 +17871,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &605987500
 GameObject:
   m_ObjectHideFlags: 0
@@ -18041,6 +18058,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &619900623
 GameObject:
   m_ObjectHideFlags: 0
@@ -18071,8 +18090,7 @@ Transform:
   m_LocalPosition: {x: 3.364, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 219258395}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &619900626
@@ -18142,6 +18160,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &626799094
 GameObject:
   m_ObjectHideFlags: 0
@@ -18243,6 +18263,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &633720650
 GameObject:
   m_ObjectHideFlags: 0
@@ -18344,6 +18366,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &636351955
 GameObject:
   m_ObjectHideFlags: 0
@@ -18445,6 +18469,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &650063017
 GameObject:
   m_ObjectHideFlags: 0
@@ -18714,6 +18740,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &657242395
 GameObject:
   m_ObjectHideFlags: 0
@@ -18815,6 +18843,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &657318156
 GameObject:
   m_ObjectHideFlags: 0
@@ -19000,6 +19030,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &657884071
 GameObject:
   m_ObjectHideFlags: 0
@@ -19101,6 +19133,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &658953361
 GameObject:
   m_ObjectHideFlags: 0
@@ -19202,6 +19236,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &658969693
 GameObject:
   m_ObjectHideFlags: 0
@@ -19303,6 +19339,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &659754943
 GameObject:
   m_ObjectHideFlags: 0
@@ -19488,6 +19526,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &660806274
 GameObject:
   m_ObjectHideFlags: 0
@@ -19673,6 +19713,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &671731948
 GameObject:
   m_ObjectHideFlags: 0
@@ -19774,6 +19816,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &675091007
 GameObject:
   m_ObjectHideFlags: 0
@@ -19875,90 +19919,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &677944699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677944700}
-  - component: {fileID: 677944701}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &677944700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677944699}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1650570953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &677944701
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677944699}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &678889212
 GameObject:
   m_ObjectHideFlags: 0
@@ -20060,6 +20022,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &681647012
 GameObject:
   m_ObjectHideFlags: 0
@@ -20161,6 +20125,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &688695401
 GameObject:
   m_ObjectHideFlags: 0
@@ -20262,6 +20228,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &689868406
 GameObject:
   m_ObjectHideFlags: 0
@@ -20363,6 +20331,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &696355184
 GameObject:
   m_ObjectHideFlags: 0
@@ -20548,6 +20518,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &699350421
 GameObject:
   m_ObjectHideFlags: 0
@@ -20733,6 +20705,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &701757969
 GameObject:
   m_ObjectHideFlags: 0
@@ -21002,6 +20976,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &722265179
 GameObject:
   m_ObjectHideFlags: 0
@@ -21271,6 +21247,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &728159371
 GameObject:
   m_ObjectHideFlags: 0
@@ -21456,6 +21434,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &733080719
 GameObject:
   m_ObjectHideFlags: 0
@@ -21557,6 +21537,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &733466273
 GameObject:
   m_ObjectHideFlags: 0
@@ -21910,6 +21892,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &756758579
 GameObject:
   m_ObjectHideFlags: 0
@@ -22011,6 +21995,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &762301941
 GameObject:
   m_ObjectHideFlags: 0
@@ -22112,6 +22098,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &762360086
 GameObject:
   m_ObjectHideFlags: 0
@@ -22213,6 +22201,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &764186831
 GameObject:
   m_ObjectHideFlags: 0
@@ -22327,8 +22317,7 @@ Transform:
   m_LocalPosition: {x: 3.66, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1556322812}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &764613227
@@ -22398,90 +22387,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &765130612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 765130613}
-  - component: {fileID: 765130614}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &765130613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765130612}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1211459122}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &765130614
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765130612}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &772570028
 GameObject:
   m_ObjectHideFlags: 0
@@ -22583,6 +22490,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &784827632
 GameObject:
   m_ObjectHideFlags: 0
@@ -23104,6 +23013,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &800738112
 GameObject:
   m_ObjectHideFlags: 0
@@ -23205,6 +23116,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &809489264
 GameObject:
   m_ObjectHideFlags: 0
@@ -23306,6 +23219,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &814596887
 GameObject:
   m_ObjectHideFlags: 0
@@ -23407,6 +23322,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &816932735
 GameObject:
   m_ObjectHideFlags: 0
@@ -23592,6 +23509,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &823543678
 GameObject:
   m_ObjectHideFlags: 0
@@ -23631,90 +23550,6 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823543678}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &825902946
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 825902947}
-  - component: {fileID: 825902948}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &825902947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825902946}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1932216740}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &825902948
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825902946}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -24197,6 +24032,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &861905255
 GameObject:
   m_ObjectHideFlags: 0
@@ -24466,6 +24303,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &878503327
 GameObject:
   m_ObjectHideFlags: 0
@@ -24567,6 +24406,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &880045780
 GameObject:
   m_ObjectHideFlags: 0
@@ -24752,6 +24593,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &888224468
 GameObject:
   m_ObjectHideFlags: 0
@@ -24853,6 +24696,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &890703592
 GameObject:
   m_ObjectHideFlags: 0
@@ -25122,6 +24967,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &897196345
 GameObject:
   m_ObjectHideFlags: 0
@@ -25223,6 +25070,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &898892854
 GameObject:
   m_ObjectHideFlags: 0
@@ -25324,6 +25173,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &899157931
 GameObject:
   m_ObjectHideFlags: 0
@@ -25425,6 +25276,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &906283982
 GameObject:
   m_ObjectHideFlags: 0
@@ -25526,6 +25379,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &908773880
 GameObject:
   m_ObjectHideFlags: 0
@@ -26144,8 +25999,7 @@ Transform:
   m_LocalPosition: {x: -3.74, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1492210748}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &924775527
@@ -26215,6 +26069,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &924802632
 GameObject:
   m_ObjectHideFlags: 0
@@ -26316,6 +26172,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &934830457
 GameObject:
   m_ObjectHideFlags: 0
@@ -26417,6 +26275,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &936293309
 GameObject:
   m_ObjectHideFlags: 0
@@ -26518,6 +26378,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &936640247
 GameObject:
   m_ObjectHideFlags: 0
@@ -26703,6 +26565,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &939975364
 GameObject:
   m_ObjectHideFlags: 0
@@ -26888,6 +26752,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &952109159
 GameObject:
   m_ObjectHideFlags: 0
@@ -27157,6 +27023,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &959039799
 GameObject:
   m_ObjectHideFlags: 0
@@ -27258,6 +27126,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &961577036
 GameObject:
   m_ObjectHideFlags: 0
@@ -27527,6 +27397,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &966006389
 GameObject:
   m_ObjectHideFlags: 0
@@ -27628,6 +27500,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &973083349
 GameObject:
   m_ObjectHideFlags: 0
@@ -27729,6 +27603,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &978115435
 GameObject:
   m_ObjectHideFlags: 0
@@ -27914,6 +27790,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &984434776
 GameObject:
   m_ObjectHideFlags: 0
@@ -28015,6 +27893,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &985328167
 GameObject:
   m_ObjectHideFlags: 0
@@ -28284,6 +28164,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &997387044
 GameObject:
   m_ObjectHideFlags: 0
@@ -28385,6 +28267,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &998365411
 GameObject:
   m_ObjectHideFlags: 0
@@ -28570,6 +28454,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1005630690
 GameObject:
   m_ObjectHideFlags: 0
@@ -28671,6 +28557,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1017866504
 GameObject:
   m_ObjectHideFlags: 0
@@ -29024,6 +28912,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1025892414
 GameObject:
   m_ObjectHideFlags: 0
@@ -29327,6 +29217,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1042795863
 GameObject:
   m_ObjectHideFlags: 0
@@ -29428,6 +29320,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1046349528
 GameObject:
   m_ObjectHideFlags: 0
@@ -29613,6 +29507,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1049007105
 GameObject:
   m_ObjectHideFlags: 0
@@ -29714,6 +29610,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1059391750
 GameObject:
   m_ObjectHideFlags: 0
@@ -29815,6 +29713,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1063879444
 GameObject:
   m_ObjectHideFlags: 0
@@ -30000,6 +29900,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1074530529
 GameObject:
   m_ObjectHideFlags: 0
@@ -30269,6 +30171,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1080089817
 GameObject:
   m_ObjectHideFlags: 0
@@ -30299,8 +30203,7 @@ Transform:
   m_LocalPosition: {x: 2.476, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1664975759}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1080089820
@@ -30370,6 +30273,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1084647038
 GameObject:
   m_ObjectHideFlags: 0
@@ -30471,6 +30376,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1089409456
 GameObject:
   m_ObjectHideFlags: 0
@@ -30740,6 +30647,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1094178148
 GameObject:
   m_ObjectHideFlags: 0
@@ -30925,6 +30834,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1097794949
 GameObject:
   m_ObjectHideFlags: 0
@@ -31110,6 +31021,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1098628730
 GameObject:
   m_ObjectHideFlags: 0
@@ -31211,6 +31124,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1103364878
 GameObject:
   m_ObjectHideFlags: 0
@@ -31312,6 +31227,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1107393883
 GameObject:
   m_ObjectHideFlags: 0
@@ -31749,6 +31666,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1125843676
 GameObject:
   m_ObjectHideFlags: 0
@@ -31934,6 +31853,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1131495652
 GameObject:
   m_ObjectHideFlags: 0
@@ -32035,6 +31956,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1134142529
 GameObject:
   m_ObjectHideFlags: 0
@@ -32220,6 +32143,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1136010044
 GameObject:
   m_ObjectHideFlags: 0
@@ -32405,6 +32330,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1142549500
 GameObject:
   m_ObjectHideFlags: 0
@@ -32758,6 +32685,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1154172997
 GameObject:
   m_ObjectHideFlags: 0
@@ -32859,6 +32788,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1158910061
 GameObject:
   m_ObjectHideFlags: 0
@@ -32998,6 +32929,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1165144567
 GameObject:
   m_ObjectHideFlags: 0
@@ -33267,6 +33200,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1167769815
 GameObject:
   m_ObjectHideFlags: 0
@@ -33368,6 +33303,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1170984546
 GameObject:
   m_ObjectHideFlags: 0
@@ -33637,6 +33574,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1182353415
 GameObject:
   m_ObjectHideFlags: 0
@@ -33738,6 +33677,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1191648769
 GameObject:
   m_ObjectHideFlags: 0
@@ -33839,6 +33780,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1199449509
 GameObject:
   m_ObjectHideFlags: 0
@@ -33940,6 +33883,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1200493779
 GameObject:
   m_ObjectHideFlags: 0
@@ -34041,6 +33986,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1200603105
 GameObject:
   m_ObjectHideFlags: 0
@@ -34142,6 +34089,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1201346298
 GameObject:
   m_ObjectHideFlags: 0
@@ -34281,6 +34230,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1207249764
 GameObject:
   m_ObjectHideFlags: 0
@@ -34395,8 +34346,7 @@ Transform:
   m_LocalPosition: {x: -2.852, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 765130613}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1211459124
@@ -34466,6 +34416,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1215741459
 GameObject:
   m_ObjectHideFlags: 0
@@ -34567,6 +34519,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1223710100
 GameObject:
   m_ObjectHideFlags: 0
@@ -34752,6 +34706,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1234875704
 GameObject:
   m_ObjectHideFlags: 0
@@ -34853,6 +34809,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1253301264
 GameObject:
   m_ObjectHideFlags: 0
@@ -35038,6 +34996,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1267493164
 GameObject:
   m_ObjectHideFlags: 0
@@ -35139,6 +35099,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1270991778
 GameObject:
   m_ObjectHideFlags: 0
@@ -35324,6 +35286,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1278493181
 GameObject:
   m_ObjectHideFlags: 0
@@ -35593,6 +35557,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1283740064
 GameObject:
   m_ObjectHideFlags: 0
@@ -35694,6 +35660,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1283887899
 GameObject:
   m_ObjectHideFlags: 0
@@ -35808,8 +35776,7 @@ Transform:
   m_LocalPosition: {x: -4.294, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 287985957}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1287615275
@@ -35834,6 +35801,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 1
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!61 &1287615276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36254,6 +36223,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1317797037
 GameObject:
   m_ObjectHideFlags: 0
@@ -36355,6 +36326,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1318681918
 GameObject:
   m_ObjectHideFlags: 0
@@ -36684,6 +36657,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1322727914
 GameObject:
   m_ObjectHideFlags: 0
@@ -36785,6 +36760,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1331488897
 GameObject:
   m_ObjectHideFlags: 0
@@ -36886,6 +36863,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1331672741
 GameObject:
   m_ObjectHideFlags: 0
@@ -37071,6 +37050,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1338635576
 GameObject:
   m_ObjectHideFlags: 0
@@ -37340,6 +37321,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1354490201
 GameObject:
   m_ObjectHideFlags: 0
@@ -37441,6 +37424,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1358140136
 GameObject:
   m_ObjectHideFlags: 0
@@ -37542,6 +37527,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1359176276
 GameObject:
   m_ObjectHideFlags: 0
@@ -37727,6 +37714,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1361827393
 GameObject:
   m_ObjectHideFlags: 0
@@ -37828,6 +37817,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1363626576
 GameObject:
   m_ObjectHideFlags: 0
@@ -38181,6 +38172,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1378546135
 GameObject:
   m_ObjectHideFlags: 0
@@ -38534,6 +38527,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1402960786
 GameObject:
   m_ObjectHideFlags: 0
@@ -38719,6 +38714,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1407077935
 GameObject:
   m_ObjectHideFlags: 0
@@ -38758,90 +38755,6 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407077935}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &1410568358
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1410568359}
-  - component: {fileID: 1410568360}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1410568359
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410568358}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 215666886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1410568360
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410568358}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -39072,6 +38985,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1414526133
 GameObject:
   m_ObjectHideFlags: 0
@@ -39257,6 +39172,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1420259137
 GameObject:
   m_ObjectHideFlags: 0
@@ -39358,6 +39275,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1420966294
 GameObject:
   m_ObjectHideFlags: 0
@@ -39879,6 +39798,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1445043142
 GameObject:
   m_ObjectHideFlags: 0
@@ -39980,6 +39901,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1452170207
 GameObject:
   m_ObjectHideFlags: 0
@@ -40165,6 +40088,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1459505405
 GameObject:
   m_ObjectHideFlags: 0
@@ -40266,6 +40191,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1462018248
 GameObject:
   m_ObjectHideFlags: 0
@@ -40367,6 +40294,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1466845539
 GameObject:
   m_ObjectHideFlags: 0
@@ -40468,6 +40397,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1467236155
 GameObject:
   m_ObjectHideFlags: 0
@@ -40569,6 +40500,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1467688426
 GameObject:
   m_ObjectHideFlags: 0
@@ -40670,6 +40603,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1473086753
 GameObject:
   m_ObjectHideFlags: 0
@@ -40855,6 +40790,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1483144109
 GameObject:
   m_ObjectHideFlags: 0
@@ -40956,6 +40893,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1484782445
 GameObject:
   m_ObjectHideFlags: 0
@@ -41141,90 +41080,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &1492210747
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1492210748}
-  - component: {fileID: 1492210749}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1492210748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492210747}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 924775525}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1492210749
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492210747}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1493488862
 GameObject:
   m_ObjectHideFlags: 0
@@ -41326,6 +41183,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1496202167
 GameObject:
   m_ObjectHideFlags: 0
@@ -41427,6 +41286,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1496729128
 GameObject:
   m_ObjectHideFlags: 0
@@ -41612,6 +41473,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1510600041
 GameObject:
   m_ObjectHideFlags: 0
@@ -41713,6 +41576,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1512809057
 GameObject:
   m_ObjectHideFlags: 0
@@ -41982,6 +41847,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1519294719
 GameObject:
   m_ObjectHideFlags: 0
@@ -42251,6 +42118,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1535650926
 GameObject:
   m_ObjectHideFlags: 0
@@ -42352,6 +42221,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1535889595
 GameObject:
   m_ObjectHideFlags: 0
@@ -42621,6 +42492,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1539397398
 GameObject:
   m_ObjectHideFlags: 0
@@ -42873,90 +42746,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1556322811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1556322812}
-  - component: {fileID: 1556322813}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1556322812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556322811}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 764613225}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1556322813
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556322811}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1559337443
 GameObject:
   m_ObjectHideFlags: 0
@@ -43058,6 +42847,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1560805581
 GameObject:
   m_ObjectHideFlags: 0
@@ -43159,6 +42950,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1562700949
 GameObject:
   m_ObjectHideFlags: 0
@@ -43512,6 +43305,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1573642554
 GameObject:
   m_ObjectHideFlags: 0
@@ -43523,7 +43318,9 @@ GameObject:
   - component: {fileID: 1573642555}
   - component: {fileID: 1573642556}
   - component: {fileID: 1573642557}
-  m_Layer: 0
+  - component: {fileID: 1573642558}
+  - component: {fileID: 1573642559}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43578,6 +43375,78 @@ MonoBehaviour:
   direction: left
   lastMovingDirection: left
   canWarp: 1
+--- !u!61 &1573642558
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573642554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0031429827, y: 0.022001542}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25194877, y: 0.25194865}
+  m_EdgeRadius: 0
+--- !u!50 &1573642559
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573642554}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1574625055
 GameObject:
   m_ObjectHideFlags: 0
@@ -43763,6 +43632,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1583105607
 GameObject:
   m_ObjectHideFlags: 0
@@ -44200,6 +44071,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1608366981
 GameObject:
   m_ObjectHideFlags: 0
@@ -44553,6 +44426,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1636303828
 GameObject:
   m_ObjectHideFlags: 0
@@ -44990,6 +44865,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1650570952
 GameObject:
   m_ObjectHideFlags: 0
@@ -45020,8 +44897,7 @@ Transform:
   m_LocalPosition: {x: 2.772, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 677944700}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1650570955
@@ -45091,6 +44967,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1656207313
 GameObject:
   m_ObjectHideFlags: 0
@@ -45276,90 +45154,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &1664975758
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1664975759}
-  - component: {fileID: 1664975760}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1664975759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664975758}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1080089818}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1664975760
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664975758}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1665995472
 GameObject:
   m_ObjectHideFlags: 0
@@ -45545,6 +45341,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1671550418
 GameObject:
   m_ObjectHideFlags: 0
@@ -45646,6 +45444,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1671791086
 GameObject:
   m_ObjectHideFlags: 0
@@ -45915,6 +45715,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1688800917
 GameObject:
   m_ObjectHideFlags: 0
@@ -46184,6 +45986,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1705071897
 GameObject:
   m_ObjectHideFlags: 0
@@ -46214,8 +46018,7 @@ Transform:
   m_LocalPosition: {x: 3.95, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2048041064}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1705071899
@@ -46240,6 +46043,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!61 &1705071900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46386,6 +46191,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1713282035
 GameObject:
   m_ObjectHideFlags: 0
@@ -46571,6 +46378,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1727117216
 GameObject:
   m_ObjectHideFlags: 0
@@ -46672,6 +46481,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1729757367
 GameObject:
   m_ObjectHideFlags: 0
@@ -46773,6 +46584,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1735171826
 GameObject:
   m_ObjectHideFlags: 0
@@ -47042,6 +46855,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1749146446
 GameObject:
   m_ObjectHideFlags: 0
@@ -47311,6 +47126,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1755101566
 GameObject:
   m_ObjectHideFlags: 0
@@ -47748,6 +47565,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1765171200
 GameObject:
   m_ObjectHideFlags: 0
@@ -47933,6 +47752,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1771151761
 GameObject:
   m_ObjectHideFlags: 0
@@ -48118,6 +47939,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1781138556
 GameObject:
   m_ObjectHideFlags: 0
@@ -48148,8 +47971,7 @@ Transform:
   m_LocalPosition: {x: -2.556, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1838707068}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1781138559
@@ -48219,90 +48041,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &1782009828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1782009829}
-  - component: {fileID: 1782009830}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1782009829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782009828}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 75220001}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1782009830
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782009828}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1790706270
 GameObject:
   m_ObjectHideFlags: 0
@@ -48488,6 +48228,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1796553688
 GameObject:
   m_ObjectHideFlags: 0
@@ -48757,6 +48499,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1803376871
 GameObject:
   m_ObjectHideFlags: 0
@@ -48871,8 +48615,7 @@ Transform:
   m_LocalPosition: {x: -3.444, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2017214310}
+  m_Children: []
   m_Father: {fileID: 1201346299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1803858049
@@ -48942,6 +48685,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1805980370
 GameObject:
   m_ObjectHideFlags: 0
@@ -49127,6 +48872,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1820955224
 GameObject:
   m_ObjectHideFlags: 0
@@ -49312,6 +49059,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1828696705
 GameObject:
   m_ObjectHideFlags: 0
@@ -49413,6 +49162,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1829351188
 GameObject:
   m_ObjectHideFlags: 0
@@ -49682,6 +49433,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1836493920
 GameObject:
   m_ObjectHideFlags: 0
@@ -49783,90 +49536,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &1838707067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1838707068}
-  - component: {fileID: 1838707069}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1838707068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838707067}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1781138557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1838707069
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838707067}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1842816252
 GameObject:
   m_ObjectHideFlags: 0
@@ -50136,6 +49807,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1847206485
 GameObject:
   m_ObjectHideFlags: 0
@@ -50321,6 +49994,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1851663370
 GameObject:
   m_ObjectHideFlags: 0
@@ -50422,6 +50097,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1852361591
 GameObject:
   m_ObjectHideFlags: 0
@@ -50607,6 +50284,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1867405035
 GameObject:
   m_ObjectHideFlags: 0
@@ -50708,6 +50387,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1878489437
 GameObject:
   m_ObjectHideFlags: 0
@@ -50893,90 +50574,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &1879704347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1879704348}
-  - component: {fileID: 1879704349}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1879704348
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879704347}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 546454162}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1879704349
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879704347}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1888034090
 GameObject:
   m_ObjectHideFlags: 0
@@ -51078,6 +50677,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1897596903
 GameObject:
   m_ObjectHideFlags: 0
@@ -51179,6 +50780,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1897930974
 GameObject:
   m_ObjectHideFlags: 0
@@ -51364,6 +50967,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1905483160
 GameObject:
   m_ObjectHideFlags: 0
@@ -51465,6 +51070,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1910325444
 GameObject:
   m_ObjectHideFlags: 0
@@ -51566,6 +51173,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1916841165
 GameObject:
   m_ObjectHideFlags: 0
@@ -52003,6 +51612,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1932216739
 GameObject:
   m_ObjectHideFlags: 0
@@ -52033,8 +51644,7 @@ Transform:
   m_LocalPosition: {x: 3.068, y: 0.27499962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 825902947}
+  m_Children: []
   m_Father: {fileID: 1158910062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1932216742
@@ -52104,6 +51714,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1932484457
 GameObject:
   m_ObjectHideFlags: 0
@@ -52373,6 +51985,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1952394203
 GameObject:
   m_ObjectHideFlags: 0
@@ -52474,6 +52088,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1954885326
 GameObject:
   m_ObjectHideFlags: 0
@@ -53062,6 +52678,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1967061742
 GameObject:
   m_ObjectHideFlags: 0
@@ -53163,6 +52781,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1967767745
 GameObject:
   m_ObjectHideFlags: 0
@@ -53264,6 +52884,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1967831976
 GameObject:
   m_ObjectHideFlags: 0
@@ -53449,6 +53071,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1971536223
 GameObject:
   m_ObjectHideFlags: 0
@@ -53550,6 +53174,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1972240305
 GameObject:
   m_ObjectHideFlags: 0
@@ -53819,6 +53445,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1984712157
 GameObject:
   m_ObjectHideFlags: 0
@@ -53920,6 +53548,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1985387951
 GameObject:
   m_ObjectHideFlags: 0
@@ -54105,6 +53735,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &1995018970
 GameObject:
   m_ObjectHideFlags: 0
@@ -54458,6 +54090,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2007094659
 GameObject:
   m_ObjectHideFlags: 0
@@ -54559,6 +54193,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2007156145
 GameObject:
   m_ObjectHideFlags: 0
@@ -54660,6 +54296,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2011874033
 GameObject:
   m_ObjectHideFlags: 0
@@ -54761,90 +54399,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
---- !u!1 &2017214309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2017214310}
-  - component: {fileID: 2017214311}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2017214310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017214309}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1803858047}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2017214311
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017214309}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2017801005
 GameObject:
   m_ObjectHideFlags: 0
@@ -54946,6 +54502,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2019395333
 GameObject:
   m_ObjectHideFlags: 0
@@ -55467,6 +55025,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2041577482
 GameObject:
   m_ObjectHideFlags: 0
@@ -55568,6 +55128,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2045674052
 GameObject:
   m_ObjectHideFlags: 0
@@ -55607,90 +55169,6 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045674052}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &2048041063
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048041064}
-  - component: {fileID: 2048041065}
-  m_Layer: 0
-  m_Name: Pellet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2048041064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048041063}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1705071898}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2048041065
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048041063}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -55837,6 +55315,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2067706352
 GameObject:
   m_ObjectHideFlags: 0
@@ -56190,6 +55670,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2087785040
 GameObject:
   m_ObjectHideFlags: 0
@@ -56375,6 +55857,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2102070091
 GameObject:
   m_ObjectHideFlags: 0
@@ -56560,6 +56044,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2110617272
 GameObject:
   m_ObjectHideFlags: 0
@@ -56661,6 +56147,8 @@ MonoBehaviour:
   NodeDown: {fileID: 0}
   IsWarpRightNode: 0
   IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
 --- !u!1 &2114551678
 GameObject:
   m_ObjectHideFlags: 0

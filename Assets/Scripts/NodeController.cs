@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NodeController : MonoBehaviour
@@ -16,9 +17,22 @@ public class NodeController : MonoBehaviour
     public bool IsWarpRightNode = false;
     public bool IsWarpLeftNode = false;
 
-    // Start is called before the first frame update
-    void Start()
+    //If the node contains a pellet when the game starts
+    public bool IsPelletNode = false;
+    //If the node sill has a pellet;
+    public bool HasPellet = false;
+
+    public SpriteRenderer pelletSprite;
+
+    private void Awake()
     {
+        if(transform.childCount > 0)
+        {
+            IsPelletNode = true;
+            HasPellet = true;
+            pelletSprite = transform.GetComponentInChildren<SpriteRenderer>();
+        }
+
         RaycastHit2D[] hitsDown;
         //Shoot a raycast line going down
         hitsDown = Physics2D.RaycastAll(transform.position, Vector2.down);
@@ -118,4 +132,14 @@ public class NodeController : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 7 && HasPellet)
+        {
+            HasPellet = false;
+            pelletSprite.enabled = false;
+        }
+    }
+
 }
