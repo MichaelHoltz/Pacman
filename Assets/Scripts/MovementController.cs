@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MovementController : MonoBehaviour
 {
     public event EventHandler OnDirectionChanged;
@@ -10,8 +11,8 @@ public class MovementController : MonoBehaviour
     public GameManager gameManager;
     public GameObject CurrentNode;
     public float Speed = 1.0f;
-    public string Direction = "";
-    public string LastMovingDirection = "";
+    public NodeController.Directions Direction = NodeController.Directions.None;
+    public NodeController.Directions LastMovingDirection = NodeController.Directions.None;
     private bool _canWarp = true;
     
     private bool _canMove = false;
@@ -40,10 +41,10 @@ public class MovementController : MonoBehaviour
             bool reverseDirection = false;
 
             if (
-                (Direction == "left" && LastMovingDirection == "right") ||
-                (Direction == "right" && LastMovingDirection == "left") ||
-                (Direction == "up" && LastMovingDirection == "down") ||
-                (Direction == "down" && LastMovingDirection == "up")
+                (Direction == NodeController.Directions.Left && LastMovingDirection == NodeController.Directions.Right) ||
+                (Direction == NodeController.Directions.Right && LastMovingDirection == NodeController.Directions.Left) ||
+                (Direction == NodeController.Directions.Up && LastMovingDirection == NodeController.Directions.Down) ||
+                (Direction == NodeController.Directions.Down && LastMovingDirection == NodeController.Directions.Up)
                 )
             {
                 reverseDirection = true;
@@ -61,8 +62,8 @@ public class MovementController : MonoBehaviour
                 if (currentNodeController.IsWarpLeftNode && _canWarp)
                 {
                     CurrentNode = gameManager.RightWarpNode;
-                    Direction = "left;";
-                    LastMovingDirection = "left";
+                    Direction = NodeController.Directions.Left;
+                    LastMovingDirection = NodeController.Directions.Left;
                     transform.position = CurrentNode.transform.position;
                     _canWarp = false;
                 }
@@ -70,15 +71,15 @@ public class MovementController : MonoBehaviour
                 else if (currentNodeController.IsWarpRightNode && _canWarp)
                 {
                     CurrentNode = gameManager.LeftWarpNode;
-                    Direction = "right";
-                    LastMovingDirection = "right";
+                    Direction = NodeController.Directions.Right;
+                    LastMovingDirection = NodeController.Directions.Right;
                     transform.position = CurrentNode.transform.position;
                     _canWarp = false;
                 }
                 else
                 {
                     //if we are not a ghost that is respawning, and we are on the start node, and we are trying to move down, stop
-                    if(currentNodeController.IsGhostStartingNode && Direction == "down" && 
+                    if(currentNodeController.IsGhostStartingNode && Direction == NodeController.Directions.Down && 
                         (!_isGhost || GetComponent<EnemyController>().GhostNodesState != EnemyController.GhostNodesStatesEnum.Respawning))
                     {
                         Direction = LastMovingDirection;
@@ -126,7 +127,7 @@ public class MovementController : MonoBehaviour
         Speed = speed;
     }
 
-    public void SetDirection(string newDirection)
+    public void SetDirection(NodeController.Directions newDirection)
     {
         Direction = newDirection;
     }

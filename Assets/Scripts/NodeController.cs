@@ -18,16 +18,25 @@ public class NodeController : MonoBehaviour
     public bool IsWarpLeftNode = false;
 
     //If the node contains a pellet when the game starts
-    public bool IsPelletNode = false;
+    private bool IsPelletNode = false;
     //If the node sill has a pellet;
-    public bool HasPellet = false;
+    private bool HasPellet = false;
 
     public bool IsGhostStartingNode = false;
 
-    public SpriteRenderer pelletSprite;
+    private SpriteRenderer pelletSprite;
     [SerializeField] private GameManager gameManager;
 
     public bool IsSideNode = false;
+
+    public enum Directions
+    {
+        None,
+        Left,
+        Right,
+        Up,
+        Down
+    }
 
     private void Awake()
     {
@@ -119,21 +128,21 @@ public class NodeController : MonoBehaviour
         
     }
 
-    public GameObject GetNodeFromDirection(string direction)
+    public GameObject GetNodeFromDirection(Directions direction)
     { 
-        if(direction == "left" && CanMoveLeft)
+        if(direction == Directions.Left && CanMoveLeft)
         {
             return NodeLeft;
         }
-        else if (direction == "right" && CanMoveRight)
+        else if (direction ==Directions.Right && CanMoveRight)
         {
             return NodeRight;
         }
-        else if (direction == "up" && CanMoveUp)
+        else if (direction == Directions.Up && CanMoveUp)
         {
             return NodeUp;
         }
-        else if (direction == "down" && CanMoveDown)
+        else if (direction == Directions.Down && CanMoveDown)
         {
             return NodeDown;
         }

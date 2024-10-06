@@ -112,7 +112,7 @@ public class EnemyController : MonoBehaviour
 
     public void ReachedCenterOfNode(NodeController nodeController)
     {
-        string direction = "";
+        NodeController.Directions direction = NodeController.Directions.None;
         //Debug.Log("Reached Center of Node");
         switch (GhostNodesState)
         {
@@ -121,28 +121,28 @@ public class EnemyController : MonoBehaviour
                 if (_readyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.MovingInNodes;
-                    _movementController.SetDirection("left");
+                    _movementController.SetDirection(NodeController.Directions.Left);
                 }
                 break;
             case GhostNodesStatesEnum.LeftNode:
                 if (_readyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.CenterNode;
-                    _movementController.SetDirection("right");
+                    _movementController.SetDirection(NodeController.Directions.Right);
                 }
                 break;
             case GhostNodesStatesEnum.RightNode:
                 if (_readyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.CenterNode;
-                    _movementController.SetDirection("left");
+                    _movementController.SetDirection(NodeController.Directions.Left);
                 }
                 break;
             case GhostNodesStatesEnum.CenterNode:
                 if (_readyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.StartNode;
-                    _movementController.SetDirection("up");
+                    _movementController.SetDirection(NodeController.Directions.Up);
                 }
 
                 break;
@@ -151,7 +151,7 @@ public class EnemyController : MonoBehaviour
                 //we have reached our start node, move to the center node
                 if (transform.position.x == _ghostNodeStart.transform.position.x && transform.position.y == _ghostNodeStart.transform.position.y)
                 {
-                    direction = "down";
+                    direction = NodeController.Directions.Down;
                 }
                 //we have reached the center node, either finish respawn, or move to the left/right node
                 else if (transform.position.x == _ghostNodeCenter.transform.position.x && transform.position.y == _ghostNodeCenter.transform.position.y)
@@ -162,11 +162,11 @@ public class EnemyController : MonoBehaviour
                     }
                     else if (_respawnState == GhostNodesStatesEnum.LeftNode)
                     {
-                        direction = "left";
+                        direction = NodeController.Directions.Left;
                     }
                     else if (_respawnState == GhostNodesStatesEnum.RightNode)
                     {
-                        direction = "right";
+                        direction = NodeController.Directions.Right;
                     }
                 }
                 else if (
@@ -234,8 +234,8 @@ public class EnemyController : MonoBehaviour
     }
 
     private void DetermineBlinkyDirection()
-    { 
-        string direction = GetClosestDirection(_gameManager.Pacman.transform.position);
+    {
+        NodeController.Directions direction = GetClosestDirection(_gameManager.Pacman.transform.position);
         _movementController.SetDirection(direction);
     }
     private void DeterminePinkyDirection()
@@ -247,14 +247,14 @@ public class EnemyController : MonoBehaviour
     private void DetermineClydeDirection()
     {
     }
-    private string GetClosestDirection(Vector2 target)
+    private NodeController.Directions GetClosestDirection(Vector2 target)
     {
         float shortestDistance = 0;
-        string lastMovingDirection = _movementController.LastMovingDirection;
+        NodeController.Directions lastMovingDirection = _movementController.LastMovingDirection;
         NodeController nodeController = _movementController.CurrentNode.GetComponent<NodeController>();
-        string newDirection = "";
+        NodeController.Directions newDirection = NodeController.Directions.None;
         //if we can move up and not reversing
-        if (nodeController.CanMoveUp && lastMovingDirection != "down")
+        if (nodeController.CanMoveUp && lastMovingDirection != NodeController.Directions.Down)
         { 
             //Get the node above us
             GameObject node = nodeController.NodeUp;
@@ -266,11 +266,11 @@ public class EnemyController : MonoBehaviour
             if(distance < shortestDistance || shortestDistance == 0)
             {
                 shortestDistance = distance;
-                newDirection = "up";
+                newDirection = NodeController.Directions.Up;
             }
         }
         //if we can move down and not reversing
-        if (nodeController.CanMoveDown && lastMovingDirection != "up")
+        if (nodeController.CanMoveDown && lastMovingDirection != NodeController.Directions.Up)
         {
             //Get the node  below us
             GameObject node = nodeController.NodeDown;
@@ -282,11 +282,11 @@ public class EnemyController : MonoBehaviour
             if (distance < shortestDistance || shortestDistance == 0)
             {
                 shortestDistance = distance;
-                newDirection = "down";
+                newDirection = NodeController.Directions.Down;
             }
         }
         //if we can move Left and not reversing
-        if (nodeController.CanMoveLeft && lastMovingDirection != "right")
+        if (nodeController.CanMoveLeft && lastMovingDirection != NodeController.Directions.Right)
         {
             //Get the node to left
             GameObject node = nodeController.NodeLeft;
@@ -298,11 +298,11 @@ public class EnemyController : MonoBehaviour
             if (distance < shortestDistance || shortestDistance == 0)
             {
                 shortestDistance = distance;
-                newDirection = "left";
+                newDirection = NodeController.Directions.Left;
             }
         }
         //if we can move right and not reversing
-        if (nodeController.CanMoveRight && lastMovingDirection != "left")
+        if (nodeController.CanMoveRight && lastMovingDirection != NodeController.Directions.Left)
         {
             //Get the node to Right
             GameObject node = nodeController.NodeRight;
@@ -314,7 +314,7 @@ public class EnemyController : MonoBehaviour
             if (distance < shortestDistance || shortestDistance == 0)
             {
                 shortestDistance = distance;
-                newDirection = "right";
+                newDirection = NodeController.Directions.Right;
             }
         }
 

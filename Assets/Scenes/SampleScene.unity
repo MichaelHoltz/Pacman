@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 7335391}
   - component: {fileID: 7335392}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 836149831}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 313339751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7335391
 BoxCollider2D:
@@ -2726,7 +2726,7 @@ GameObject:
   - component: {fileID: 97189482}
   - component: {fileID: 97189483}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2746,7 +2746,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1967831977}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1626947796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &97189482
 BoxCollider2D:
@@ -4383,7 +4383,7 @@ GameObject:
   - component: {fileID: 145488255}
   - component: {fileID: 145488256}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4403,7 +4403,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1671791087}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1626947796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &145488255
 BoxCollider2D:
@@ -5422,7 +5422,7 @@ GameObject:
   - component: {fileID: 189285388}
   - component: {fileID: 189285389}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5442,7 +5442,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 220682111}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1280955611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &189285388
 BoxCollider2D:
@@ -9043,6 +9043,41 @@ MonoBehaviour:
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
   IsSideNode: 0
+--- !u!1 &313339750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313339751}
+  m_Layer: 0
+  m_Name: ScatterNodesClyde
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313339751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313339750}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 319454771}
+  - {fileID: 1467236156}
+  - {fileID: 1950205550}
+  - {fileID: 7335389}
+  m_Father: {fileID: 1027850338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316352712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9330,7 +9365,7 @@ GameObject:
   - component: {fileID: 319454773}
   - component: {fileID: 319454774}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9350,7 +9385,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1391620358}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 313339751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &319454773
 BoxCollider2D:
@@ -12840,6 +12875,26 @@ PrefabInstance:
       propertyPath: _ghostNodeCenter
       value: 
       objectReference: {fileID: 1898999238}
+    - target: {fileID: 9084635319149297779, guid: 32f7703a1c968994b88319cb7c28d74b, type: 3}
+      propertyPath: scatterNodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084635319149297779, guid: 32f7703a1c968994b88319cb7c28d74b, type: 3}
+      propertyPath: scatterNodes.Array.data[0]
+      value: 
+      objectReference: {fileID: 924802632}
+    - target: {fileID: 9084635319149297779, guid: 32f7703a1c968994b88319cb7c28d74b, type: 3}
+      propertyPath: scatterNodes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1729757367}
+    - target: {fileID: 9084635319149297779, guid: 32f7703a1c968994b88319cb7c28d74b, type: 3}
+      propertyPath: scatterNodes.Array.data[2]
+      value: 
+      objectReference: {fileID: 97189479}
+    - target: {fileID: 9084635319149297779, guid: 32f7703a1c968994b88319cb7c28d74b, type: 3}
+      propertyPath: scatterNodes.Array.data[3]
+      value: 
+      objectReference: {fileID: 145488252}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25952,7 +26007,7 @@ GameObject:
   - component: {fileID: 924802635}
   - component: {fileID: 924802636}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25972,7 +26027,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1017866505}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1626947796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &924802635
 BoxCollider2D:
@@ -28886,6 +28941,9 @@ Transform:
   - {fileID: 1937454650}
   - {fileID: 1484986321}
   - {fileID: 1914026876}
+  - {fileID: 1626947796}
+  - {fileID: 1280955611}
+  - {fileID: 313339751}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036631566
@@ -31227,6 +31285,34 @@ PrefabInstance:
       propertyPath: _ghostNodeCenter
       value: 
       objectReference: {fileID: 1898999238}
+    - target: {fileID: 6724556123608370571, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: scatterNodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724556123608370571, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: scatterNodes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1878526973}
+    - target: {fileID: 6724556123608370571, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: scatterNodes.Array.data[1]
+      value: 
+      objectReference: {fileID: 189285385}
+    - target: {fileID: 6724556123608370571, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: scatterNodes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1989164197}
+    - target: {fileID: 6724556123608370571, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: scatterNodes.Array.data[3]
+      value: 
+      objectReference: {fileID: 1845171341}
+    - target: {fileID: 8543720596400904343, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: m_Color.g
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543720596400904343, guid: 5a62f3a52d792694eae73622e4e7b136, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35267,6 +35353,41 @@ MonoBehaviour:
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
   IsSideNode: 0
+--- !u!1 &1280955610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280955611}
+  m_Layer: 0
+  m_Name: ScatterNodesInky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280955611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280955610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1878526974}
+  - {fileID: 189285386}
+  - {fileID: 1989164198}
+  - {fileID: 1845171342}
+  m_Father: {fileID: 1027850338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283740064
 GameObject:
   m_ObjectHideFlags: 0
@@ -40349,7 +40470,7 @@ GameObject:
   - component: {fileID: 1467236158}
   - component: {fileID: 1467236159}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40369,7 +40490,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1278512410}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 313339751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1467236158
 BoxCollider2D:
@@ -44472,6 +44593,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1626947795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626947796}
+  m_Layer: 0
+  m_Name: ScatterNodesPinky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626947796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626947795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 924802633}
+  - {fileID: 1729757368}
+  - {fileID: 97189480}
+  - {fileID: 145488253}
+  m_Father: {fileID: 1027850338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627372211
 GameObject:
   m_ObjectHideFlags: 0
@@ -46437,7 +46593,7 @@ GameObject:
   - component: {fileID: 1729757370}
   - component: {fileID: 1729757371}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46457,7 +46613,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1430300156}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1626947796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1729757370
 BoxCollider2D:
@@ -49296,7 +49452,7 @@ GameObject:
   - component: {fileID: 1845171344}
   - component: {fileID: 1845171345}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49316,7 +49472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1547787074}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1280955611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1845171344
 BoxCollider2D:
@@ -49998,7 +50154,7 @@ GameObject:
   - component: {fileID: 1878526976}
   - component: {fileID: 1878526977}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50018,7 +50174,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 10369801}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1280955611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1878526976
 BoxCollider2D:
@@ -51066,6 +51222,34 @@ PrefabInstance:
       propertyPath: _ghostNodeCenter
       value: 
       objectReference: {fileID: 1898999238}
+    - target: {fileID: 694061517011969278, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: scatterNodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 694061517011969278, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: scatterNodes.Array.data[0]
+      value: 
+      objectReference: {fileID: 319454770}
+    - target: {fileID: 694061517011969278, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: scatterNodes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1467236155}
+    - target: {fileID: 694061517011969278, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: scatterNodes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1950205549}
+    - target: {fileID: 694061517011969278, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: scatterNodes.Array.data[3]
+      value: 
+      objectReference: {fileID: 7335388}
+    - target: {fileID: 2477760390842593762, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: m_Color.b
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2477760390842593762, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
+      propertyPath: m_Color.g
+      value: 0.54509807
+      objectReference: {fileID: 0}
     - target: {fileID: 6148627182532316901, guid: 247915b2f546e8e4c8ad07615d696870, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -51649,7 +51833,7 @@ GameObject:
   - component: {fileID: 1950205552}
   - component: {fileID: 1950205553}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51669,7 +51853,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 225720218}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 313339751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1950205552
 BoxCollider2D:
@@ -52048,7 +52232,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1950205550}
   - {fileID: 762301942}
   - {fileID: 2041577483}
   - {fileID: 522378058}
@@ -52059,10 +52242,8 @@ Transform:
   - {fileID: 1493488863}
   - {fileID: 762360087}
   - {fileID: 859824001}
-  - {fileID: 1467236156}
   - {fileID: 1462018249}
   - {fileID: 1910325445}
-  - {fileID: 1989164198}
   - {fileID: 1668994872}
   - {fileID: 262289772}
   - {fileID: 1411675068}
@@ -52076,7 +52257,6 @@ Transform:
   - {fileID: 1360252459}
   - {fileID: 453746584}
   - {fileID: 1694619311}
-  - {fileID: 189285386}
   - {fileID: 410013720}
   - {fileID: 128985913}
   - {fileID: 1317797038}
@@ -52111,7 +52291,6 @@ Transform:
   - {fileID: 756758580}
   - {fileID: 299259150}
   - {fileID: 1340682839}
-  - {fileID: 1878526974}
   - {fileID: 355152179}
   - {fileID: 1971536224}
   - {fileID: 1080069889}
@@ -52143,7 +52322,6 @@ Transform:
   - {fileID: 1182353416}
   - {fileID: 1443538788}
   - {fileID: 892159578}
-  - {fileID: 1845171342}
   - {fileID: 727276367}
   - {fileID: 221747084}
   - {fileID: 897196346}
@@ -52205,7 +52383,6 @@ Transform:
   - {fileID: 1084647039}
   - {fileID: 1518863066}
   - {fileID: 1535650927}
-  - {fileID: 319454771}
   - {fileID: 1456388945}
   - {fileID: 958338262}
   - {fileID: 878503328}
@@ -52223,7 +52400,6 @@ Transform:
   - {fileID: 1416898257}
   - {fileID: 584772577}
   - {fileID: 1499767150}
-  - {fileID: 7335389}
   - {fileID: 244250869}
   - {fileID: 189221346}
   - {fileID: 1093954096}
@@ -52235,7 +52411,6 @@ Transform:
   - {fileID: 1905483161}
   - {fileID: 1802291878}
   - {fileID: 1510600042}
-  - {fileID: 383952635}
   - {fileID: 478698965}
   - {fileID: 1131495653}
   - {fileID: 266253891}
@@ -52244,11 +52419,9 @@ Transform:
   - {fileID: 1459505406}
   - {fileID: 1685265534}
   - {fileID: 1322727915}
-  - {fileID: 924802633}
   - {fileID: 1173350024}
   - {fileID: 633720651}
   - {fileID: 1121083605}
-  - {fileID: 1729757368}
   - {fileID: 136027455}
   - {fileID: 479580084}
   - {fileID: 1049007106}
@@ -52283,11 +52456,10 @@ Transform:
   - {fileID: 1533663915}
   - {fileID: 819719035}
   - {fileID: 671731949}
-  - {fileID: 145488253}
   - {fileID: 98087345}
   - {fileID: 984234472}
   - {fileID: 1215741460}
-  - {fileID: 97189480}
+  - {fileID: 383952635}
   m_Father: {fileID: 1027850338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964746560
@@ -53387,7 +53559,7 @@ GameObject:
   - component: {fileID: 1989164200}
   - component: {fileID: 1989164201}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53407,7 +53579,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1751595428}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1280955611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1989164200
 BoxCollider2D:

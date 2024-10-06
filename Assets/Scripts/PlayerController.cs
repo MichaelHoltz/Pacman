@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public void StartGame()
     {
         //movementController.Direction = "left";
-        movementController.LastMovingDirection = "left";
+        movementController.LastMovingDirection = NodeController.Directions.Left;
         animator.SetInteger("direction", 1);
         _canMove = true;
     }
@@ -50,22 +50,22 @@ public class PlayerController : MonoBehaviour
             {
                 if (inputVector.x > 0)
                 {
-                    movementController.SetDirection("right");
+                    movementController.SetDirection(NodeController.Directions.Right);
                 }
                 if (inputVector.x < 0)
                 {
-                    movementController.SetDirection("left");
+                    movementController.SetDirection(NodeController.Directions.Left);
                 }
             }
             else if (Y > X)
             {
                 if (inputVector.y > 0)
                 {
-                    movementController.SetDirection("up");
+                    movementController.SetDirection(NodeController.Directions.Up);
                 }
                 if (inputVector.y < 0)
                 {
-                    movementController.SetDirection("down");
+                    movementController.SetDirection(NodeController.Directions.Down);
                 }
             }
         }
@@ -77,20 +77,20 @@ public class PlayerController : MonoBehaviour
         //Debug.Log($"Direction Changed: {movementController.Direction}");
         //bool flipX = false;
         //bool flipY = false;
-        if (movementController.Direction == "left")
+        if (movementController.Direction == NodeController.Directions.Left)
         {
             animator.SetInteger("direction", 1);
         }
-        else if (movementController.Direction == "right")
+        else if (movementController.Direction == NodeController.Directions.Right)
         {
             animator.SetInteger("direction", 2);
             //flipX = true;
         }
-        else if (movementController.Direction == "up")
+        else if (movementController.Direction == NodeController.Directions.Up)
         {
             animator.SetInteger("direction", 0);
         }
-        else if (movementController.Direction == "down")
+        else if (movementController.Direction == NodeController.Directions.Down)
         {
             animator.SetInteger("direction", 3);
             //flipY = true;
