@@ -23,7 +23,7 @@ public class NodeController : MonoBehaviour
     public bool HasPellet = false;
 
     public SpriteRenderer pelletSprite;
-
+    [SerializeField] private GameManager gameManager;
     private void Awake()
     {
         if(transform.childCount > 0)
@@ -139,6 +139,7 @@ public class NodeController : MonoBehaviour
         {
             HasPellet = false;
             pelletSprite.enabled = false;
+            gameManager.CollectedPellet(this);
         }
     }
 
