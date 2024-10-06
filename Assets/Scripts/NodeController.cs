@@ -22,8 +22,13 @@ public class NodeController : MonoBehaviour
     //If the node sill has a pellet;
     public bool HasPellet = false;
 
+    public bool IsGhostStartingNode = false;
+
     public SpriteRenderer pelletSprite;
     [SerializeField] private GameManager gameManager;
+
+    public bool IsSideNode = false;
+
     private void Awake()
     {
         if(transform.childCount > 0)
@@ -96,6 +101,12 @@ public class NodeController : MonoBehaviour
                     NodeLeft = hitsLeft[i].collider.gameObject;
                 }
             }
+        }
+
+        if(IsGhostStartingNode)
+        {
+            CanMoveDown = true;
+            NodeDown = gameManager.GhostNodeCenter;
         }
 
     }

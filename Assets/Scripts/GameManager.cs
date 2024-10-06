@@ -25,10 +25,28 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MovementController _movementController;
     [SerializeField] private TextMeshProUGUI _readyText;
 
+    [SerializeField] private GameObject _ghostNodeStart;
+    public GameObject GhostNodeCenter;
+    [SerializeField] private GameObject _ghostNodeLeft;
+    [SerializeField] private GameObject _ghostNodeRight;
+
+    public GameObject Pacman;
     private bool _gameStarted = false;
+    public event EventHandler OnGameStart;
+
+    public enum GhostMode
+    {
+        Chase,
+        Scatter
+    }
+
+    public GhostMode CurrentGhostMode;
     private void Awake()
     {
         _startGame.Play();
+        _score = 0;
+        _currentMunch = 0;
+        CurrentGhostMode = GhostMode.Chase;
     }
 
     // Update is called once per frame
@@ -45,6 +63,7 @@ public class GameManager : MonoBehaviour
                 _playerController.StartGame();
                 _movementController.StartGame();
                 _siren.Play();
+                OnGameStart?.Invoke(this, EventArgs.Empty);
             }
         }
     }

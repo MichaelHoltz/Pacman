@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Node
   - Player
-  - 
-  - 
+  - GhostHomeNode
+  - Enemy
   - 
   - 
   - 

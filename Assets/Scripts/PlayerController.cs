@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public void StartGame()
     {
+        //movementController.Direction = "left";
+        movementController.LastMovingDirection = "left";
         animator.SetInteger("direction", 1);
         _canMove = true;
     }

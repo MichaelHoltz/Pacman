@@ -393,8 +393,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &7335388
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,8 +500,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &10369800
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,8 +691,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &14946421
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,8 +798,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &22537484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,8 +1072,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &37815359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,8 +1263,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &50803109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1306,90 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50803109}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &51365421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 51365422}
+  - component: {fileID: 51365423}
+  m_Layer: 0
+  m_Name: Pellet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &51365422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51365421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1546016779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &51365423
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51365421}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1442,8 +1538,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &67747767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,8 +1886,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &73304933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,8 +2161,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &75220000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,8 +2222,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!61 &75220003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2438,8 +2542,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &91080319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,8 +2817,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &98087344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,8 +2924,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &98897530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,8 +3283,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &113156697
 GameObject:
   m_ObjectHideFlags: 0
@@ -3277,8 +3389,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &117794523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,8 +3748,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &123653801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,8 +3855,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &128985912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,8 +3962,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &132783763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,8 +4069,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &135293928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,8 +4176,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &136027454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,8 +4283,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &144087810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,8 +4474,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &147138439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,8 +4749,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &150782221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,8 +5108,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &168279310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,8 +5215,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &187007958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5272,8 +5406,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &189285385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,8 +5513,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &192818110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,7 +5529,7 @@ GameObject:
   - component: {fileID: 192818113}
   - component: {fileID: 192818114}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5411,7 +5549,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1539397399}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1914026876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &192818113
 BoxCollider2D:
@@ -5482,8 +5620,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &194268124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,8 +5727,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &195803359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,8 +5917,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &197220379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,8 +6024,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &202415740
 GameObject:
   m_ObjectHideFlags: 0
@@ -5985,8 +6131,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &210665592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6090,8 +6238,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &210737280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,8 +6344,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &215666885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6298,8 +6450,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &216323438
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,8 +6557,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &216500068
 GameObject:
   m_ObjectHideFlags: 0
@@ -6760,8 +6916,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &225720217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,8 +7107,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &234749107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,8 +7298,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &262289771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7243,8 +7405,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &264182286
 GameObject:
   m_ObjectHideFlags: 0
@@ -7432,8 +7596,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &270437380
 GameObject:
   m_ObjectHideFlags: 0
@@ -7537,8 +7703,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &273048915
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,8 +7894,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &281337733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7915,8 +8085,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &288827108
 GameObject:
   m_ObjectHideFlags: 0
@@ -8020,8 +8192,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &288951934
 GameObject:
   m_ObjectHideFlags: 0
@@ -8292,8 +8466,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &293501024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8481,8 +8657,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &299259149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8586,8 +8764,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &307844992
 GameObject:
   m_ObjectHideFlags: 0
@@ -8859,8 +9039,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &316352712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,8 +9230,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &319429346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,8 +9421,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &327652509
 GameObject:
   m_ObjectHideFlags: 0
@@ -9342,8 +9528,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &328857687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9447,8 +9635,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &332152936
 GameObject:
   m_ObjectHideFlags: 0
@@ -9887,8 +10077,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &349841334
 GameObject:
   m_ObjectHideFlags: 0
@@ -9991,8 +10183,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &350937102
 GameObject:
   m_ObjectHideFlags: 0
@@ -10264,8 +10458,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &355212763
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,8 +10565,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &361267165
 GameObject:
   m_ObjectHideFlags: 0
@@ -10383,7 +10581,7 @@ GameObject:
   - component: {fileID: 361267168}
   - component: {fileID: 361267169}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10403,7 +10601,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 516688072}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1914026876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &361267168
 BoxCollider2D:
@@ -10474,8 +10672,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &372860905
 GameObject:
   m_ObjectHideFlags: 0
@@ -10747,8 +10947,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &383329089
 GameObject:
   m_ObjectHideFlags: 0
@@ -10936,8 +11138,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &389473669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11209,8 +11413,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &399390835
 GameObject:
   m_ObjectHideFlags: 0
@@ -11313,8 +11519,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &401510811
 GameObject:
   m_ObjectHideFlags: 0
@@ -11418,8 +11626,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &406607853
 GameObject:
   m_ObjectHideFlags: 0
@@ -11523,8 +11733,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &407600035
 GameObject:
   m_ObjectHideFlags: 0
@@ -11796,8 +12008,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &410982285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12153,8 +12367,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &430908642
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,8 +12558,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &439555139
 GameObject:
   m_ObjectHideFlags: 0
@@ -12530,8 +12748,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &446190117
 GameObject:
   m_ObjectHideFlags: 0
@@ -12803,8 +13023,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &451820322
 GameObject:
   m_ObjectHideFlags: 0
@@ -13075,8 +13297,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &453746583
 GameObject:
   m_ObjectHideFlags: 0
@@ -13180,8 +13404,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &467901585
 GameObject:
   m_ObjectHideFlags: 0
@@ -13285,8 +13511,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &471439571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13474,8 +13702,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &472855537
 GameObject:
   m_ObjectHideFlags: 0
@@ -13579,8 +13809,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &474520362
 GameObject:
   m_ObjectHideFlags: 0
@@ -13684,8 +13916,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &478698964
 GameObject:
   m_ObjectHideFlags: 0
@@ -13789,8 +14023,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &479580083
 GameObject:
   m_ObjectHideFlags: 0
@@ -13894,8 +14130,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &482674741
 GameObject:
   m_ObjectHideFlags: 0
@@ -14251,8 +14489,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &491711929
 GameObject:
   m_ObjectHideFlags: 0
@@ -14310,8 +14550,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!61 &491711932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14460,8 +14702,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &512091509
 GameObject:
   m_ObjectHideFlags: 0
@@ -14649,8 +14893,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &514293487
 GameObject:
   m_ObjectHideFlags: 0
@@ -15014,8 +15260,117 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &523804144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523804147}
+  - component: {fileID: 523804146}
+  - component: {fileID: 523804145}
+  m_Layer: 8
+  m_Name: LeftNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &523804145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523804144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7287cd0d9287044ca90a1b66c837be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanMoveLeft: 0
+  CanMoveRight: 1
+  CanMoveUp: 0
+  CanMoveDown: 0
+  NodeLeft: {fileID: 0}
+  NodeRight: {fileID: 1898999238}
+  NodeUp: {fileID: 0}
+  NodeDown: {fileID: 0}
+  IsWarpRightNode: 0
+  IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
+  IsGhostStartingNode: 0
+  pelletSprite: {fileID: 0}
+  gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!61 &523804146
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523804144}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010976642, y: -0.00024309754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10649297, y: 0.10820216}
+  m_EdgeRadius: 0
+--- !u!4 &523804147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523804144}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.562, y: 0.2749996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 707727631}
+  m_Father: {fileID: 1484986321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524756658
 GameObject:
   m_ObjectHideFlags: 0
@@ -15286,8 +15641,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &539411837
 GameObject:
   m_ObjectHideFlags: 0
@@ -15475,8 +15832,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &544818838
 GameObject:
   m_ObjectHideFlags: 0
@@ -15618,8 +15977,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!61 &546454164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15935,8 +16296,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &553115084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16040,8 +16403,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &553459639
 GameObject:
   m_ObjectHideFlags: 0
@@ -16363,8 +16728,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &562322667
 GameObject:
   m_ObjectHideFlags: 0
@@ -16552,8 +16919,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &571184437
 GameObject:
   m_ObjectHideFlags: 0
@@ -16656,8 +17025,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &575663121
 GameObject:
   m_ObjectHideFlags: 0
@@ -16761,8 +17132,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &584772576
 GameObject:
   m_ObjectHideFlags: 0
@@ -16866,8 +17239,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &586523504
 GameObject:
   m_ObjectHideFlags: 0
@@ -17054,8 +17429,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &596684550
 GameObject:
   m_ObjectHideFlags: 0
@@ -17158,8 +17535,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &601954121
 GameObject:
   m_ObjectHideFlags: 0
@@ -17263,8 +17642,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &605987500
 GameObject:
   m_ObjectHideFlags: 0
@@ -17452,8 +17833,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &619900623
 GameObject:
   m_ObjectHideFlags: 0
@@ -17556,8 +17939,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &626799094
 GameObject:
   m_ObjectHideFlags: 0
@@ -17660,8 +18045,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &633720650
 GameObject:
   m_ObjectHideFlags: 0
@@ -17765,8 +18152,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &636351955
 GameObject:
   m_ObjectHideFlags: 0
@@ -17870,8 +18259,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &644343226
 GameObject:
   m_ObjectHideFlags: 0
@@ -18277,8 +18668,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &657242395
 GameObject:
   m_ObjectHideFlags: 0
@@ -18381,8 +18774,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &657358632
 GameObject:
   m_ObjectHideFlags: 0
@@ -18486,8 +18881,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &657884071
 GameObject:
   m_ObjectHideFlags: 0
@@ -18591,8 +18988,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &658953361
 GameObject:
   m_ObjectHideFlags: 0
@@ -18696,8 +19095,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &658969693
 GameObject:
   m_ObjectHideFlags: 0
@@ -18801,8 +19202,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &659754943
 GameObject:
   m_ObjectHideFlags: 0
@@ -18990,8 +19393,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &660806274
 GameObject:
   m_ObjectHideFlags: 0
@@ -19179,8 +19584,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &671731948
 GameObject:
   m_ObjectHideFlags: 0
@@ -19284,8 +19691,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &675091007
 GameObject:
   m_ObjectHideFlags: 0
@@ -19389,8 +19798,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &678889212
 GameObject:
   m_ObjectHideFlags: 0
@@ -19494,8 +19905,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &681647012
 GameObject:
   m_ObjectHideFlags: 0
@@ -19508,7 +19921,7 @@ GameObject:
   - component: {fileID: 681647015}
   - component: {fileID: 681647016}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19528,7 +19941,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1207249765}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1914026876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &681647015
 BoxCollider2D:
@@ -19599,8 +20012,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &688695401
 GameObject:
   m_ObjectHideFlags: 0
@@ -19704,8 +20119,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &689868406
 GameObject:
   m_ObjectHideFlags: 0
@@ -19809,8 +20226,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &696355184
 GameObject:
   m_ObjectHideFlags: 0
@@ -19998,8 +20417,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &699350421
 GameObject:
   m_ObjectHideFlags: 0
@@ -20187,8 +20608,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &701757969
 GameObject:
   m_ObjectHideFlags: 0
@@ -20357,6 +20780,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &707727630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 707727631}
+  - component: {fileID: 707727632}
+  m_Layer: 0
+  m_Name: Pellet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &707727631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707727630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 523804147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &707727632
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707727630}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &717109545
 GameObject:
   m_ObjectHideFlags: 0
@@ -20460,8 +20967,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &722265179
 GameObject:
   m_ObjectHideFlags: 0
@@ -20733,8 +21242,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &728159371
 GameObject:
   m_ObjectHideFlags: 0
@@ -20922,8 +21433,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &733080719
 GameObject:
   m_ObjectHideFlags: 0
@@ -21027,8 +21540,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &733466273
 GameObject:
   m_ObjectHideFlags: 0
@@ -21384,8 +21899,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &756758579
 GameObject:
   m_ObjectHideFlags: 0
@@ -21489,8 +22006,191 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &761596118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761596122}
+  - component: {fileID: 761596121}
+  - component: {fileID: 761596120}
+  - component: {fileID: 761596119}
+  - component: {fileID: 761596123}
+  m_Layer: 9
+  m_Name: Blinky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &761596119
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761596118}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 9b9659085557d2d48a34546857e7eaaf, type: 3}
+  m_Color: {r: 0.98039216, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &761596120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761596118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13a01ddd94f7b649a80c693b62b7ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1320460112}
+  CurrentNode: {fileID: 0}
+  Speed: 2
+  Direction: 
+  LastMovingDirection: 
+  _isGhost: 1
+--- !u!114 &761596121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761596118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db53215a5cd48564b9686b90a88a17d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GhostNodesState: 0
+  _ghostType: 0
+  _ghostNodeStart: {fileID: 1546016776}
+  _ghostNodeCenter: {fileID: 1898999238}
+  _ghostNodeLeft: {fileID: 523804144}
+  _ghostNodeRight: {fileID: 1947662378}
+  _movementController: {fileID: 761596120}
+  _startingNode: {fileID: 1546016776}
+  _gameManager: {fileID: 1320460112}
+  _readyToLeaveHome: 0
+  _testRespawn: 0
+  IsFrightened: 0
+  scatterNodes:
+  - {fileID: 681647012}
+  - {fileID: 814596887}
+  - {fileID: 192818110}
+  - {fileID: 361267165}
+  ScatterNodeIndex: 0
+--- !u!4 &761596122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761596118}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.037, y: 1.171999, z: 0}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 832265165}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &761596123
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761596118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0077818036, y: 0.023345768}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5241464, y: 1.5552725}
+  m_EdgeRadius: 0
 --- !u!1 &762301941
 GameObject:
   m_ObjectHideFlags: 0
@@ -21594,8 +22294,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &762360086
 GameObject:
   m_ObjectHideFlags: 0
@@ -21699,8 +22401,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &764613224
 GameObject:
   m_ObjectHideFlags: 0
@@ -21803,8 +22507,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &772570028
 GameObject:
   m_ObjectHideFlags: 0
@@ -21908,8 +22614,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &784827632
 GameObject:
   m_ObjectHideFlags: 0
@@ -22433,8 +23141,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &800738112
 GameObject:
   m_ObjectHideFlags: 0
@@ -22538,8 +23248,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &809489264
 GameObject:
   m_ObjectHideFlags: 0
@@ -22643,8 +23355,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &811960260
 GameObject:
   m_ObjectHideFlags: 0
@@ -22761,7 +23475,7 @@ GameObject:
   - component: {fileID: 814596890}
   - component: {fileID: 814596891}
   m_Layer: 6
-  m_Name: Node
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22781,7 +23495,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 415049826}
-  m_Father: {fileID: 1961131245}
+  m_Father: {fileID: 1914026876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &814596890
 BoxCollider2D:
@@ -22852,8 +23566,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &819719034
 GameObject:
   m_ObjectHideFlags: 0
@@ -22957,8 +23673,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &823543678
 GameObject:
   m_ObjectHideFlags: 0
@@ -23122,6 +23840,90 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.05, y: 0.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &832265164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832265165}
+  - component: {fileID: 832265166}
+  m_Layer: 9
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &832265165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832265164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761596122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &832265166
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832265164}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: a5269df81a3d0d4409f6ca97f61a646e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -23482,8 +24284,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &861905255
 GameObject:
   m_ObjectHideFlags: 0
@@ -23671,8 +24475,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &878503327
 GameObject:
   m_ObjectHideFlags: 0
@@ -23776,8 +24582,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &880045780
 GameObject:
   m_ObjectHideFlags: 0
@@ -23965,8 +24773,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &888224468
 GameObject:
   m_ObjectHideFlags: 0
@@ -24070,8 +24880,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &890703592
 GameObject:
   m_ObjectHideFlags: 0
@@ -24343,8 +25155,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &897196345
 GameObject:
   m_ObjectHideFlags: 0
@@ -24448,8 +25262,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &898892854
 GameObject:
   m_ObjectHideFlags: 0
@@ -24553,8 +25369,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &899157931
 GameObject:
   m_ObjectHideFlags: 0
@@ -24658,8 +25476,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &906283982
 GameObject:
   m_ObjectHideFlags: 0
@@ -24762,8 +25582,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &908773880
 GameObject:
   m_ObjectHideFlags: 0
@@ -25286,8 +26108,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &924802632
 GameObject:
   m_ObjectHideFlags: 0
@@ -25391,8 +26215,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &934830457
 GameObject:
   m_ObjectHideFlags: 0
@@ -25495,8 +26321,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &936293309
 GameObject:
   m_ObjectHideFlags: 0
@@ -25600,8 +26428,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &936640247
 GameObject:
   m_ObjectHideFlags: 0
@@ -25789,8 +26619,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &939975364
 GameObject:
   m_ObjectHideFlags: 0
@@ -25978,8 +26810,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &952109159
 GameObject:
   m_ObjectHideFlags: 0
@@ -26251,8 +27085,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &959039799
 GameObject:
   m_ObjectHideFlags: 0
@@ -26356,8 +27192,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &961870238
 GameObject:
   m_ObjectHideFlags: 0
@@ -26545,8 +27383,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &966006389
 GameObject:
   m_ObjectHideFlags: 0
@@ -26650,8 +27490,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &973083349
 GameObject:
   m_ObjectHideFlags: 0
@@ -26755,8 +27597,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &978115435
 GameObject:
   m_ObjectHideFlags: 0
@@ -26944,8 +27788,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &984434776
 GameObject:
   m_ObjectHideFlags: 0
@@ -27049,8 +27895,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &985328167
 GameObject:
   m_ObjectHideFlags: 0
@@ -27322,8 +28170,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &997387044
 GameObject:
   m_ObjectHideFlags: 0
@@ -27427,8 +28277,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &998365411
 GameObject:
   m_ObjectHideFlags: 0
@@ -27616,8 +28468,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1005630690
 GameObject:
   m_ObjectHideFlags: 0
@@ -27721,8 +28575,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1017866504
 GameObject:
   m_ObjectHideFlags: 0
@@ -27994,8 +28850,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1025892414
 GameObject:
   m_ObjectHideFlags: 0
@@ -28198,6 +29056,8 @@ Transform:
   - {fileID: 1201346299}
   - {fileID: 67747768}
   - {fileID: 1937454650}
+  - {fileID: 1484986321}
+  - {fileID: 1914026876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036631566
@@ -28303,8 +29163,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1042795863
 GameObject:
   m_ObjectHideFlags: 0
@@ -28408,8 +29270,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1046349528
 GameObject:
   m_ObjectHideFlags: 0
@@ -28597,8 +29461,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1049007105
 GameObject:
   m_ObjectHideFlags: 0
@@ -28702,8 +29568,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1059391750
 GameObject:
   m_ObjectHideFlags: 0
@@ -28807,8 +29675,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1063879444
 GameObject:
   m_ObjectHideFlags: 0
@@ -28996,8 +29866,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1074530529
 GameObject:
   m_ObjectHideFlags: 0
@@ -29269,8 +30141,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1080089817
 GameObject:
   m_ObjectHideFlags: 0
@@ -29373,8 +30247,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1084647038
 GameObject:
   m_ObjectHideFlags: 0
@@ -29478,8 +30354,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1089409456
 GameObject:
   m_ObjectHideFlags: 0
@@ -29751,8 +30629,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1094178148
 GameObject:
   m_ObjectHideFlags: 0
@@ -29939,8 +30819,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1097794949
 GameObject:
   m_ObjectHideFlags: 0
@@ -30128,8 +31010,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1098628730
 GameObject:
   m_ObjectHideFlags: 0
@@ -30232,8 +31116,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1103364878
 GameObject:
   m_ObjectHideFlags: 0
@@ -30337,8 +31223,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1109152432
 GameObject:
   m_ObjectHideFlags: 0
@@ -30526,8 +31414,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1125843676
 GameObject:
   m_ObjectHideFlags: 0
@@ -30715,8 +31605,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1131495652
 GameObject:
   m_ObjectHideFlags: 0
@@ -30820,8 +31712,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1134142529
 GameObject:
   m_ObjectHideFlags: 0
@@ -31008,8 +31902,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1136010044
 GameObject:
   m_ObjectHideFlags: 0
@@ -31197,8 +32093,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1142549500
 GameObject:
   m_ObjectHideFlags: 0
@@ -31469,8 +32367,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1154172997
 GameObject:
   m_ObjectHideFlags: 0
@@ -31574,8 +32474,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1158910061
 GameObject:
   m_ObjectHideFlags: 0
@@ -31607,11 +32509,11 @@ Transform:
   m_Children:
   - {fileID: 764613225}
   - {fileID: 1705071898}
-  - {fileID: 546454162}
   - {fileID: 619900624}
   - {fileID: 1932216740}
   - {fileID: 1650570953}
   - {fileID: 1080089818}
+  - {fileID: 546454162}
   m_Father: {fileID: 1027850338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164588242
@@ -31717,8 +32619,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1165144567
 GameObject:
   m_ObjectHideFlags: 0
@@ -31906,8 +32810,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1167769815
 GameObject:
   m_ObjectHideFlags: 0
@@ -32011,8 +32917,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1170984546
 GameObject:
   m_ObjectHideFlags: 0
@@ -32284,8 +33192,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1182353415
 GameObject:
   m_ObjectHideFlags: 0
@@ -32389,8 +33299,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1191648769
 GameObject:
   m_ObjectHideFlags: 0
@@ -32494,8 +33406,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1199449509
 GameObject:
   m_ObjectHideFlags: 0
@@ -32599,8 +33513,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1200493779
 GameObject:
   m_ObjectHideFlags: 0
@@ -32704,8 +33620,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1200603105
 GameObject:
   m_ObjectHideFlags: 0
@@ -32809,8 +33727,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1201346298
 GameObject:
   m_ObjectHideFlags: 0
@@ -32951,8 +33871,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1207249764
 GameObject:
   m_ObjectHideFlags: 0
@@ -33139,8 +34061,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1215741459
 GameObject:
   m_ObjectHideFlags: 0
@@ -33244,8 +34168,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1223710100
 GameObject:
   m_ObjectHideFlags: 0
@@ -33433,8 +34359,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1234875704
 GameObject:
   m_ObjectHideFlags: 0
@@ -33538,8 +34466,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1253301264
 GameObject:
   m_ObjectHideFlags: 0
@@ -33727,8 +34657,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1267493164
 GameObject:
   m_ObjectHideFlags: 0
@@ -33832,8 +34764,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1270991778
 GameObject:
   m_ObjectHideFlags: 0
@@ -34021,8 +34955,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1278493181
 GameObject:
   m_ObjectHideFlags: 0
@@ -34293,8 +35229,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1283740064
 GameObject:
   m_ObjectHideFlags: 0
@@ -34397,8 +35335,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1283887899
 GameObject:
   m_ObjectHideFlags: 0
@@ -34540,8 +35480,10 @@ MonoBehaviour:
   IsWarpLeftNode: 1
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!61 &1287615276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34796,8 +35738,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1317797037
 GameObject:
   m_ObjectHideFlags: 0
@@ -34901,8 +35845,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1318681918
 GameObject:
   m_ObjectHideFlags: 0
@@ -35030,6 +35976,12 @@ MonoBehaviour:
   _playerController: {fileID: 1573642556}
   _movementController: {fileID: 1573642557}
   _readyText: {fileID: 1996901476}
+  _ghostNodeStart: {fileID: 1546016776}
+  GhostNodeCenter: {fileID: 1898999238}
+  _ghostNodeLeft: {fileID: 523804144}
+  _ghostNodeRight: {fileID: 1947662378}
+  Pacman: {fileID: 1573642554}
+  CurrentGhostMode: 1
 --- !u!4 &1320460113
 Transform:
   m_ObjectHideFlags: 0
@@ -35531,8 +36483,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1322727914
 GameObject:
   m_ObjectHideFlags: 0
@@ -35636,8 +36590,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1331488897
 GameObject:
   m_ObjectHideFlags: 0
@@ -35741,8 +36697,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1331672741
 GameObject:
   m_ObjectHideFlags: 0
@@ -35929,8 +36887,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1338635576
 GameObject:
   m_ObjectHideFlags: 0
@@ -36202,8 +37162,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1354490201
 GameObject:
   m_ObjectHideFlags: 0
@@ -36306,8 +37268,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1358140136
 GameObject:
   m_ObjectHideFlags: 0
@@ -36411,8 +37375,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1360252458
 GameObject:
   m_ObjectHideFlags: 0
@@ -36516,8 +37482,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1361827393
 GameObject:
   m_ObjectHideFlags: 0
@@ -36621,8 +37589,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1363626576
 GameObject:
   m_ObjectHideFlags: 0
@@ -36978,8 +37948,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1378546135
 GameObject:
   m_ObjectHideFlags: 0
@@ -37334,8 +38306,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1402960786
 GameObject:
   m_ObjectHideFlags: 0
@@ -37523,8 +38497,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1407077935
 GameObject:
   m_ObjectHideFlags: 0
@@ -37796,8 +38772,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1414526133
 GameObject:
   m_ObjectHideFlags: 0
@@ -37985,8 +38963,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1420259137
 GameObject:
   m_ObjectHideFlags: 0
@@ -38090,8 +39070,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1420966294
 GameObject:
   m_ObjectHideFlags: 0
@@ -38615,8 +39597,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1445043142
 GameObject:
   m_ObjectHideFlags: 0
@@ -38720,8 +39704,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1452170207
 GameObject:
   m_ObjectHideFlags: 0
@@ -38909,8 +39895,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1459505405
 GameObject:
   m_ObjectHideFlags: 0
@@ -39014,8 +40002,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1462018248
 GameObject:
   m_ObjectHideFlags: 0
@@ -39119,8 +40109,94 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &1463035956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463035957}
+  - component: {fileID: 1463035958}
+  m_Layer: 0
+  m_Name: Pellet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463035957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463035956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1947662379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1463035958
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463035956}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1466845539
 GameObject:
   m_ObjectHideFlags: 0
@@ -39223,8 +40299,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1467236155
 GameObject:
   m_ObjectHideFlags: 0
@@ -39328,8 +40406,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1467688426
 GameObject:
   m_ObjectHideFlags: 0
@@ -39433,8 +40513,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1473086753
 GameObject:
   m_ObjectHideFlags: 0
@@ -39621,8 +40703,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1483144109
 GameObject:
   m_ObjectHideFlags: 0
@@ -39726,8 +40810,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1484782445
 GameObject:
   m_ObjectHideFlags: 0
@@ -39915,8 +41001,45 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &1484986320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484986321}
+  m_Layer: 0
+  m_Name: GhostNodes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484986321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484986320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1546016779}
+  - {fileID: 523804147}
+  - {fileID: 1898999241}
+  - {fileID: 1947662379}
+  m_Father: {fileID: 1027850338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1493488862
 GameObject:
   m_ObjectHideFlags: 0
@@ -40020,8 +41143,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1496202167
 GameObject:
   m_ObjectHideFlags: 0
@@ -40125,8 +41250,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1496729128
 GameObject:
   m_ObjectHideFlags: 0
@@ -40314,8 +41441,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1510600041
 GameObject:
   m_ObjectHideFlags: 0
@@ -40419,8 +41548,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1512809057
 GameObject:
   m_ObjectHideFlags: 0
@@ -40692,8 +41823,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1519294719
 GameObject:
   m_ObjectHideFlags: 0
@@ -40965,8 +42098,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1535650926
 GameObject:
   m_ObjectHideFlags: 0
@@ -41070,8 +42205,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1535889595
 GameObject:
   m_ObjectHideFlags: 0
@@ -41342,8 +42479,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1539397398
 GameObject:
   m_ObjectHideFlags: 0
@@ -41512,6 +42651,113 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1546016776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546016779}
+  - component: {fileID: 1546016778}
+  - component: {fileID: 1546016777}
+  m_Layer: 6
+  m_Name: StartNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1546016777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546016776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7287cd0d9287044ca90a1b66c837be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanMoveLeft: 0
+  CanMoveRight: 0
+  CanMoveUp: 0
+  CanMoveDown: 0
+  NodeLeft: {fileID: 0}
+  NodeRight: {fileID: 0}
+  NodeUp: {fileID: 0}
+  NodeDown: {fileID: 0}
+  IsWarpRightNode: 0
+  IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
+  IsGhostStartingNode: 1
+  pelletSprite: {fileID: 0}
+  gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!61 &1546016778
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546016776}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010976642, y: -0.00024309754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10649297, y: 0.10820216}
+  m_EdgeRadius: 0
+--- !u!4 &1546016779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546016776}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.037, y: 1.171999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 51365422}
+  m_Father: {fileID: 1484986321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1547787073
 GameObject:
   m_ObjectHideFlags: 0
@@ -41699,8 +42945,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1560805581
 GameObject:
   m_ObjectHideFlags: 0
@@ -41803,8 +43051,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1562700949
 GameObject:
   m_ObjectHideFlags: 0
@@ -42159,8 +43409,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1573642554
 GameObject:
   m_ObjectHideFlags: 0
@@ -42227,6 +43479,8 @@ MonoBehaviour:
   CurrentNode: {fileID: 491711929}
   Speed: 3
   Direction: 
+  LastMovingDirection: 
+  _isGhost: 0
 --- !u!61 &1573642558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42486,8 +43740,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1583105607
 GameObject:
   m_ObjectHideFlags: 0
@@ -42926,8 +44182,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1608366981
 GameObject:
   m_ObjectHideFlags: 0
@@ -43283,8 +44541,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1636303828
 GameObject:
   m_ObjectHideFlags: 0
@@ -43472,8 +44732,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1650570952
 GameObject:
   m_ObjectHideFlags: 0
@@ -43576,8 +44838,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1656207313
 GameObject:
   m_ObjectHideFlags: 0
@@ -43764,8 +45028,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1665995472
 GameObject:
   m_ObjectHideFlags: 0
@@ -43953,8 +45219,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1671550418
 GameObject:
   m_ObjectHideFlags: 0
@@ -44058,8 +45326,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1671791086
 GameObject:
   m_ObjectHideFlags: 0
@@ -44331,8 +45601,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1688800917
 GameObject:
   m_ObjectHideFlags: 0
@@ -44604,8 +45876,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1705071897
 GameObject:
   m_ObjectHideFlags: 0
@@ -44663,8 +45937,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!61 &1705071900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44813,8 +46089,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1713282035
 GameObject:
   m_ObjectHideFlags: 0
@@ -45002,8 +46280,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1727117216
 GameObject:
   m_ObjectHideFlags: 0
@@ -45107,8 +46387,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1729757367
 GameObject:
   m_ObjectHideFlags: 0
@@ -45212,8 +46494,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1735171826
 GameObject:
   m_ObjectHideFlags: 0
@@ -45401,8 +46685,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1749146446
 GameObject:
   m_ObjectHideFlags: 0
@@ -45673,8 +46959,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1755101566
 GameObject:
   m_ObjectHideFlags: 0
@@ -46029,8 +47317,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1765452182
 GameObject:
   m_ObjectHideFlags: 0
@@ -46133,8 +47423,94 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &1765503915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765503916}
+  - component: {fileID: 1765503917}
+  m_Layer: 0
+  m_Name: Pellet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1765503916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765503915}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1898999241}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1765503917
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765503915}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c5f0a333b6d697244b871a97845ab1e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1771151761
 GameObject:
   m_ObjectHideFlags: 0
@@ -46322,8 +47698,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1781138556
 GameObject:
   m_ObjectHideFlags: 0
@@ -46426,8 +47804,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1794633597
 GameObject:
   m_ObjectHideFlags: 0
@@ -46530,8 +47910,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1796553688
 GameObject:
   m_ObjectHideFlags: 0
@@ -46719,8 +48101,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1803376871
 GameObject:
   m_ObjectHideFlags: 0
@@ -46907,8 +48291,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1805980370
 GameObject:
   m_ObjectHideFlags: 0
@@ -47096,8 +48482,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1820955224
 GameObject:
   m_ObjectHideFlags: 0
@@ -47285,8 +48673,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1828696705
 GameObject:
   m_ObjectHideFlags: 0
@@ -47390,8 +48780,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1829351188
 GameObject:
   m_ObjectHideFlags: 0
@@ -47663,8 +49055,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1836493920
 GameObject:
   m_ObjectHideFlags: 0
@@ -47768,8 +49162,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1842816252
 GameObject:
   m_ObjectHideFlags: 0
@@ -47957,8 +49353,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1847206485
 GameObject:
   m_ObjectHideFlags: 0
@@ -48146,8 +49544,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1851663370
 GameObject:
   m_ObjectHideFlags: 0
@@ -48250,8 +49650,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1852918927
 GameObject:
   m_ObjectHideFlags: 0
@@ -48355,8 +49757,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1867405035
 GameObject:
   m_ObjectHideFlags: 0
@@ -48460,8 +49864,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1878489437
 GameObject:
   m_ObjectHideFlags: 0
@@ -48649,8 +50055,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1888034090
 GameObject:
   m_ObjectHideFlags: 0
@@ -48754,8 +50162,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1897596903
 GameObject:
   m_ObjectHideFlags: 0
@@ -48859,8 +50269,117 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &1898999238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898999241}
+  - component: {fileID: 1898999240}
+  - component: {fileID: 1898999239}
+  m_Layer: 8
+  m_Name: CenterNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1898999239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898999238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7287cd0d9287044ca90a1b66c837be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanMoveLeft: 1
+  CanMoveRight: 1
+  CanMoveUp: 1
+  CanMoveDown: 0
+  NodeLeft: {fileID: 523804144}
+  NodeRight: {fileID: 1947662378}
+  NodeUp: {fileID: 1546016776}
+  NodeDown: {fileID: 0}
+  IsWarpRightNode: 0
+  IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
+  IsGhostStartingNode: 0
+  pelletSprite: {fileID: 0}
+  gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!61 &1898999240
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898999238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010976642, y: -0.00024309754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10649297, y: 0.10820216}
+  m_EdgeRadius: 0
+--- !u!4 &1898999241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898999238}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.037, y: 0.2749996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1765503916}
+  m_Father: {fileID: 1484986321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900298244
 GameObject:
   m_ObjectHideFlags: 0
@@ -48964,8 +50483,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1905483160
 GameObject:
   m_ObjectHideFlags: 0
@@ -49069,8 +50590,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1910325444
 GameObject:
   m_ObjectHideFlags: 0
@@ -49174,8 +50697,45 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!1 &1914026875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914026876}
+  m_Layer: 0
+  m_Name: ScatterNodesBlinky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1914026876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914026875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 681647013}
+  - {fileID: 814596888}
+  - {fileID: 192818111}
+  - {fileID: 361267166}
+  m_Father: {fileID: 1027850338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1916841165
 GameObject:
   m_ObjectHideFlags: 0
@@ -49615,8 +51175,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1932216739
 GameObject:
   m_ObjectHideFlags: 0
@@ -49719,8 +51281,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 1
 --- !u!1 &1937454649
 GameObject:
   m_ObjectHideFlags: 0
@@ -49755,6 +51319,113 @@ Transform:
   - {fileID: 399390836}
   m_Father: {fileID: 1027850338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1947662378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947662379}
+  - component: {fileID: 1947662381}
+  - component: {fileID: 1947662380}
+  m_Layer: 8
+  m_Name: RightNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947662379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947662378}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.2749996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1463035957}
+  m_Father: {fileID: 1484986321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947662380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947662378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7287cd0d9287044ca90a1b66c837be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanMoveLeft: 1
+  CanMoveRight: 0
+  CanMoveUp: 0
+  CanMoveDown: 0
+  NodeLeft: {fileID: 1898999238}
+  NodeRight: {fileID: 0}
+  NodeUp: {fileID: 0}
+  NodeDown: {fileID: 0}
+  IsWarpRightNode: 0
+  IsWarpLeftNode: 0
+  IsPelletNode: 0
+  HasPellet: 0
+  IsGhostStartingNode: 0
+  pelletSprite: {fileID: 0}
+  gameManager: {fileID: 1320460112}
+  IsSideNode: 0
+--- !u!61 &1947662381
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947662378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010976642, y: -0.00024309754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10649297, y: 0.10820216}
+  m_EdgeRadius: 0
 --- !u!1 &1949708853
 GameObject:
   m_ObjectHideFlags: 0
@@ -49942,8 +51613,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1952394203
 GameObject:
   m_ObjectHideFlags: 0
@@ -50047,8 +51720,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1954885326
 GameObject:
   m_ObjectHideFlags: 0
@@ -50282,11 +51957,9 @@ Transform:
   - {fileID: 2083048864}
   - {fileID: 380432811}
   - {fileID: 1048098266}
-  - {fileID: 361267166}
   - {fileID: 542475941}
   - {fileID: 135293929}
   - {fileID: 601954122}
-  - {fileID: 192818111}
   - {fileID: 14278501}
   - {fileID: 984434777}
   - {fileID: 150664554}
@@ -50332,11 +52005,9 @@ Transform:
   - {fileID: 772570029}
   - {fileID: 1897596904}
   - {fileID: 1065871568}
-  - {fileID: 681647013}
   - {fileID: 689868407}
   - {fileID: 1483144110}
   - {fileID: 2007156146}
-  - {fileID: 814596888}
   - {fileID: 962976214}
   - {fileID: 1331488898}
   - {fileID: 274391183}
@@ -50595,8 +52266,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1967061742
 GameObject:
   m_ObjectHideFlags: 0
@@ -50700,8 +52373,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1967767745
 GameObject:
   m_ObjectHideFlags: 0
@@ -50805,8 +52480,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1967831976
 GameObject:
   m_ObjectHideFlags: 0
@@ -50994,8 +52671,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1971536223
 GameObject:
   m_ObjectHideFlags: 0
@@ -51099,8 +52778,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1972240305
 GameObject:
   m_ObjectHideFlags: 0
@@ -51372,8 +53053,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1984712157
 GameObject:
   m_ObjectHideFlags: 0
@@ -51477,8 +53160,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1985387951
 GameObject:
   m_ObjectHideFlags: 0
@@ -51666,8 +53351,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &1994792494
 GameObject:
   m_ObjectHideFlags: 0
@@ -51931,14 +53618,14 @@ RectTransform:
   m_GameObject: {fileID: 1996901474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 811960261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -69}
+  m_AnchoredPosition: {x: 0, y: -72}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996901476
@@ -51988,8 +53675,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52225,8 +53912,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2007094659
 GameObject:
   m_ObjectHideFlags: 0
@@ -52330,8 +54019,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2007156145
 GameObject:
   m_ObjectHideFlags: 0
@@ -52435,8 +54126,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2011874033
 GameObject:
   m_ObjectHideFlags: 0
@@ -52540,8 +54233,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2017801005
 GameObject:
   m_ObjectHideFlags: 0
@@ -52645,8 +54340,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2019395333
 GameObject:
   m_ObjectHideFlags: 0
@@ -53086,8 +54783,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2041577482
 GameObject:
   m_ObjectHideFlags: 0
@@ -53191,8 +54890,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2054964505
 GameObject:
   m_ObjectHideFlags: 0
@@ -53295,8 +54996,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2067706352
 GameObject:
   m_ObjectHideFlags: 0
@@ -53652,8 +55355,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2087785040
 GameObject:
   m_ObjectHideFlags: 0
@@ -53841,8 +55546,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2110244113
 GameObject:
   m_ObjectHideFlags: 0
@@ -53945,8 +55652,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2110617272
 GameObject:
   m_ObjectHideFlags: 0
@@ -54050,8 +55759,10 @@ MonoBehaviour:
   IsWarpLeftNode: 0
   IsPelletNode: 0
   HasPellet: 0
+  IsGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 1320460112}
+  IsSideNode: 0
 --- !u!1 &2114551678
 GameObject:
   m_ObjectHideFlags: 0
@@ -54313,5 +56024,6 @@ SceneRoots:
   - {fileID: 1027850338}
   - {fileID: 1320460113}
   - {fileID: 1573642555}
-  - {fileID: 1994792497}
   - {fileID: 811960261}
+  - {fileID: 1994792497}
+  - {fileID: 761596122}
