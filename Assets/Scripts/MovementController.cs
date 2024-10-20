@@ -27,7 +27,10 @@ public class MovementController : MonoBehaviour
     {
         _canMove = true;
     }
-
+    public void StopGame()
+    {
+        _canMove = false;
+    }
     // Update is called once per frame
     private void Update()
     {

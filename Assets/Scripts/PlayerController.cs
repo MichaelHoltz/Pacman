@@ -11,13 +11,13 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer sprite;
     public Animator animator;
 
-    private bool _canMove = false;
-
+    
+    [SerializeField] private GameObject _startNode;
 
     private void Awake()
     {
         playerInputActions = new PlayerInputActions();
-        playerInputActions.Player.Enable();
+        
 
         animator = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
@@ -26,57 +26,70 @@ public class PlayerController : MonoBehaviour
         movementController.OnDirectionChanged += MovementController_OnDirectionChanged;
         
     }
+    //Setup needs to be called early in the game
+    public void Setup()
+    {
+        movementController.CurrentNode = _startNode;
+        transform.position = _startNode.transform.position;
+        movementController.LastMovingDirection = NodeController.Directions.Left;
+
+        animator.SetInteger("direction", 0);
+        animator.SetBool("moving", false);
+        //playerInputActions.Player.Disable();
+        
+    }
 
     public void StartGame()
     {
-        //movementController.Direction = "left";
+        //Direction Left
         movementController.LastMovingDirection = NodeController.Directions.Left;
         animator.SetInteger("direction", 1);
-        _canMove = true;
+        animator.SetBool("moving", true);
+        playerInputActions.Player.Enable();
     }
-
+    public void StopGame()
+    { 
+        movementController.StopGame();
+        
+        movementController.LastMovingDirection = NodeController.Directions.None;
+        animator.SetInteger("direction", 0);
+        animator.SetBool("moving", false);
+    }
     // Update is called once per frame
     void Update()
     {
-        if (_canMove)
-        {
-            animator.SetBool("moving", true);
-            Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
+            
+        Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
 
-            //Use the Max Value if two pressed.
-            float X = Mathf.Abs(inputVector.x);
-            float Y = Mathf.Abs(inputVector.y);
-            if (X > Y)
+        //Use the Max Value if two pressed.
+        float X = Mathf.Abs(inputVector.x);
+        float Y = Mathf.Abs(inputVector.y);
+        if (X > Y)
+        {
+            if (inputVector.x > 0)
             {
-                if (inputVector.x > 0)
-                {
-                    movementController.SetDirection(NodeController.Directions.Right);
-                }
-                if (inputVector.x < 0)
-                {
-                    movementController.SetDirection(NodeController.Directions.Left);
-                }
+                movementController.SetDirection(NodeController.Directions.Right);
             }
-            else if (Y > X)
+            if (inputVector.x < 0)
             {
-                if (inputVector.y > 0)
-                {
-                    movementController.SetDirection(NodeController.Directions.Up);
-                }
-                if (inputVector.y < 0)
-                {
-                    movementController.SetDirection(NodeController.Directions.Down);
-                }
+                movementController.SetDirection(NodeController.Directions.Left);
             }
         }
-
+        else if (Y > X)
+        {
+            if (inputVector.y > 0)
+            {
+                movementController.SetDirection(NodeController.Directions.Up);
+            }
+            if (inputVector.y < 0)
+            {
+                movementController.SetDirection(NodeController.Directions.Down);
+            }
+        }
 
     }
     private void MovementController_OnDirectionChanged(object sender, EventArgs e)
     {
-        //Debug.Log($"Direction Changed: {movementController.Direction}");
-        //bool flipX = false;
-        //bool flipY = false;
         if (movementController.Direction == NodeController.Directions.Left)
         {
             animator.SetInteger("direction", 1);
@@ -84,7 +97,6 @@ public class PlayerController : MonoBehaviour
         else if (movementController.Direction == NodeController.Directions.Right)
         {
             animator.SetInteger("direction", 2);
-            //flipX = true;
         }
         else if (movementController.Direction == NodeController.Directions.Up)
         {
@@ -93,38 +105,9 @@ public class PlayerController : MonoBehaviour
         else if (movementController.Direction == NodeController.Directions.Down)
         {
             animator.SetInteger("direction", 3);
-            //flipY = true;
         }
 
-        //sprite.flipX = flipX;
-        //sprite.flipY = flipY;
     }
 
 
-    private void LateUpdate()
-    {
-        //bool flipX = false;
-        //bool flipY = false;
-        //if (movementController.LastMovingDirection == "left")
-        //{
-        //    animator.SetInteger("direction", 0);
-        //}
-        //else if (movementController.LastMovingDirection == "right")
-        //{
-        //    animator.SetInteger("direction", 0);
-        //    flipX = true;
-        //}
-        //else if (movementController.LastMovingDirection == "up")
-        //{
-        //    animator.SetInteger("direction", 1);
-        //}
-        //else if (movementController.LastMovingDirection == "down")
-        //{
-        //    animator.SetInteger("direction", 1);
-        //    flipY = true;
-        //}
-
-        //sprite.flipX = flipX;
-        //sprite.flipY = flipY;
-    }
 }

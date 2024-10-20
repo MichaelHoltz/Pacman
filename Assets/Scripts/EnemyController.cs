@@ -25,23 +25,28 @@ public class EnemyController : MonoBehaviour
     }
 
     public GhostNodesStatesEnum GhostNodesState;
+    public GhostNodesStatesEnum StartGhostNodesState;
     private GhostNodesStatesEnum _respawnState;
     [SerializeField] private GhostType _ghostType;
 
-    [SerializeField] private GameObject _ghostNodeStart;
-    [SerializeField] private GameObject _ghostNodeCenter;
-    [SerializeField] private GameObject _ghostNodeLeft;
-    [SerializeField] private GameObject _ghostNodeRight;
+    
+    [SerializeField] private GameObject _ghostNodeStart; //Blinky
+    [SerializeField] private GameObject _ghostNodeCenter; //Pinky
+    [SerializeField] private GameObject _ghostNodeLeft; //Inky
+    [SerializeField] private GameObject _ghostNodeRight; //Clyde
     [SerializeField] private MovementController _movementController;
     [SerializeField] private GameObject _startingNode;
 
     [SerializeField] private GameManager _gameManager;
-    [SerializeField] private bool _readyToLeaveHome = false;
+    public bool ReadyToLeaveHome = false;
     [SerializeField] private bool _testRespawn = false;
     public bool IsFrightened = false;
+    private bool _allowReverseDirection = false;
 
     public GameObject[] scatterNodes;
     public int ScatterNodeIndex;
+    private const float DISTANCE_BETWEEN_NODES = 0.35f;
+    public bool LeftHomeBefore = false;
 
     private void Awake()
     {
@@ -50,34 +55,68 @@ public class EnemyController : MonoBehaviour
         switch (_ghostType)
         {
             case GhostType.Blinky:
-                GhostNodesState = GhostNodesStatesEnum.StartNode;
+                StartGhostNodesState = GhostNodesStatesEnum.StartNode;
                 _respawnState = GhostNodesStatesEnum.CenterNode;
                 _startingNode = _ghostNodeStart;
-                _readyToLeaveHome = true;
+                ReadyToLeaveHome = true;
+                LeftHomeBefore = true;
                 //Blinky Starts in the Center when Respawning, but in _startNode at the beginning of the game so this seems wrong
                 break;
             case GhostType.Pinky:
-                GhostNodesState = GhostNodesStatesEnum.CenterNode;
+                StartGhostNodesState = GhostNodesStatesEnum.CenterNode;
                 _respawnState = GhostNodesStatesEnum.CenterNode;
                 _startingNode = _ghostNodeCenter;
                 break;
             case GhostType.Inky:
-                GhostNodesState = GhostNodesStatesEnum.LeftNode;
+                StartGhostNodesState = GhostNodesStatesEnum.LeftNode;
                 _respawnState = GhostNodesStatesEnum.LeftNode;
                 _startingNode = _ghostNodeLeft;
                 break;
             case GhostType.Clyde:
-                GhostNodesState = GhostNodesStatesEnum.RightNode;
+                StartGhostNodesState = GhostNodesStatesEnum.RightNode;
                 _respawnState = GhostNodesStatesEnum.RightNode;
                 _startingNode = _ghostNodeRight;
                 break;
         }
-        _movementController.CurrentNode = _startingNode;
-        transform.position = _startingNode.transform.position;
+
+    }
+    public void StopGame()
+    {
+        _movementController.StopGame();
     }
 
+    public void Setup()
+    {
+        //Reset the ghosts back to their home position
+        GhostNodesState = StartGhostNodesState;
+        _movementController.CurrentNode = _startingNode;
+        _movementController.LastMovingDirection = NodeController.Directions.None;
+        _movementController.Direction = NodeController.Directions.None;
+        transform.position = _startingNode.transform.position;
+        //set their scatter node index to 0
+        ScatterNodeIndex = 0;
+        //set isFrightened to false
+        IsFrightened = false;
+        //set ready to leave home to false if Inky or Clyde
+        if (_ghostType == GhostType.Inky || _ghostType == GhostType.Clyde)
+        {
+            ReadyToLeaveHome = false;
+            LeftHomeBefore = false;
+        }
+        else if(_ghostType == GhostType.Blinky) 
+        {
+            ReadyToLeaveHome = true;
+            LeftHomeBefore = true;
+        }
+        else if(_ghostType == GhostType.Pinky)
+        {
+            ReadyToLeaveHome = true;
+            LeftHomeBefore = false;
+        }
+        //_movementController.StartGame();
+        
 
-
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -93,9 +132,14 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (!_gameManager.gameIsRunning)
+        {
+            return;
+        }
+
         if(_testRespawn)
         {
-            _readyToLeaveHome = false;
+            ReadyToLeaveHome = false;
             GhostNodesState = GhostNodesStatesEnum.Respawning;
             _testRespawn = false;
         }
@@ -116,38 +160,36 @@ public class EnemyController : MonoBehaviour
         //Debug.Log("Reached Center of Node");
         switch (GhostNodesState)
         {
-
             case GhostNodesStatesEnum.StartNode:
-                if (_readyToLeaveHome)
+                if (ReadyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.MovingInNodes;
                     _movementController.SetDirection(NodeController.Directions.Left);
                 }
                 break;
             case GhostNodesStatesEnum.LeftNode:
-                if (_readyToLeaveHome)
+                if (ReadyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.CenterNode;
                     _movementController.SetDirection(NodeController.Directions.Right);
                 }
                 break;
             case GhostNodesStatesEnum.RightNode:
-                if (_readyToLeaveHome)
+                if (ReadyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.CenterNode;
                     _movementController.SetDirection(NodeController.Directions.Left);
                 }
                 break;
             case GhostNodesStatesEnum.CenterNode:
-                if (_readyToLeaveHome)
+                if (ReadyToLeaveHome)
                 {
                     GhostNodesState = GhostNodesStatesEnum.StartNode;
                     _movementController.SetDirection(NodeController.Directions.Up);
                 }
-
                 break;
             case GhostNodesStatesEnum.Respawning:
-                
+             
                 //we have reached our start node, move to the center node
                 if (transform.position.x == _ghostNodeStart.transform.position.x && transform.position.y == _ghostNodeStart.transform.position.y)
                 {
@@ -186,66 +228,165 @@ public class EnemyController : MonoBehaviour
                 _movementController.SetDirection(direction);
                 break;
             case GhostNodesStatesEnum.MovingInNodes:
-
+                LeftHomeBefore = true;
                 //Scatter Mode
                 if (_gameManager.CurrentGhostMode == GameManager.GhostMode.Scatter)
                 {
-                    //if we reached the scatter node, move to the next scatter node
-                    if (transform.position.x == scatterNodes[ScatterNodeIndex].transform.position.x && transform.position.y == scatterNodes[ScatterNodeIndex].transform.position.y)
-                    {
-                        ScatterNodeIndex++;
-                        if (ScatterNodeIndex == scatterNodes.Length - 1)
-                        {
-                            ScatterNodeIndex = 0;
-                        }
-                        
-                    }
-                    direction = GetClosestDirection(scatterNodes[ScatterNodeIndex].transform.position);
-                    _movementController.SetDirection(direction);
+                    determineGhostScatterModeDirection();
+                    
                 }
                 //Frightened Mode
                 else if (IsFrightened)
-                { 
-                
+                {
+                   // _allowReverseDirection
+                    _movementController.SetDirection(getRandomDirection());
                 }
                 //Chase Mode
                 else
                 {
                     if (_ghostType == GhostType.Blinky)
                     {
-                        DetermineBlinkyDirection();
+                        determineBlinkyDirection();
                     }
                     else if (_ghostType == GhostType.Pinky)
                     {
-                        DeterminePinkyDirection();
+                        determinePinkyDirection();
                     }
                     else if (_ghostType == GhostType.Inky)
                     {
-                        DeterminInkyDirection();
+                        determinInkyDirection();
                     }
                     else if (_ghostType == GhostType.Clyde)
                     {
-                        DetermineClydeDirection();
+                        determineClydeDirection();
                     }
                 }
 
                 break;
         }
     }
-
-    private void DetermineBlinkyDirection()
+    private NodeController.Directions getRandomDirection()
+    {
+        List<NodeController.Directions> possibleDirections = new List<NodeController.Directions>();
+        NodeController nodeController = _movementController.CurrentNode.GetComponent<NodeController>();
+        
+        if (nodeController.CanMoveUp && _movementController.Direction != NodeController.Directions.Down)
+        {
+            possibleDirections.Add(NodeController.Directions.Up);
+        }
+        if (nodeController.CanMoveDown && _movementController.Direction != NodeController.Directions.Up)
+        {
+            possibleDirections.Add(NodeController.Directions.Down);
+        }
+        if (nodeController.CanMoveLeft && _movementController.Direction != NodeController.Directions.Right)
+        {
+            possibleDirections.Add(NodeController.Directions.Left);
+        }
+        if (nodeController.CanMoveRight && _movementController.Direction != NodeController.Directions.Left)
+        {
+            possibleDirections.Add(NodeController.Directions.Right);
+        }
+        if (possibleDirections.Count > 0)
+        {
+            return possibleDirections[UnityEngine.Random.Range(0, possibleDirections.Count)];
+        }
+        else
+        {
+            return _movementController.Direction;
+        }
+        
+        
+    }
+    private void determineGhostScatterModeDirection()
+    {
+        //if we reached the scatter node, move to the next scatter node
+        if (transform.position.x == scatterNodes[ScatterNodeIndex].transform.position.x && transform.position.y == scatterNodes[ScatterNodeIndex].transform.position.y)
+        {
+            ScatterNodeIndex++;
+            if (ScatterNodeIndex == scatterNodes.Length - 1)
+            {
+                ScatterNodeIndex = 0;
+            }
+            //Debug.Log($"ScatterNodeIndex: {ScatterNodeIndex}");
+        }
+        
+        NodeController.Directions direction = GetClosestDirection(scatterNodes[ScatterNodeIndex].transform.position);
+        _movementController.SetDirection(direction);
+        
+    }
+    private void determineBlinkyDirection()
     {
         NodeController.Directions direction = GetClosestDirection(_gameManager.Pacman.transform.position);
         _movementController.SetDirection(direction);
     }
-    private void DeterminePinkyDirection()
-    { 
-    }
-    private void DeterminInkyDirection()
-    { 
-    }
-    private void DetermineClydeDirection()
+    private void determinePinkyDirection()
     {
+        NodeController.Directions pacmansDirection = _gameManager.Pacman.GetComponent<MovementController>().LastMovingDirection;
+        
+        Vector2 target = _gameManager.Pacman.transform.position;
+
+        if (pacmansDirection == NodeController.Directions.Left)
+        { 
+           target.x -= DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if(pacmansDirection == NodeController.Directions.Right)
+        {
+            target.x += DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if (pacmansDirection == NodeController.Directions.Up)
+        {
+            target.y += DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if (pacmansDirection == NodeController.Directions.Down)
+        {
+            target.y -= DISTANCE_BETWEEN_NODES * 2;
+        }
+        NodeController.Directions direction = GetClosestDirection(target);
+        _movementController.SetDirection(direction);
+    }
+    private void determinInkyDirection()
+    {
+        NodeController.Directions pacmansDirection = _gameManager.Pacman.GetComponent<MovementController>().LastMovingDirection;
+        
+        Vector2 target = _gameManager.Pacman.transform.position;
+
+        if (pacmansDirection == NodeController.Directions.Left)
+        {
+            target.x -= DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if (pacmansDirection == NodeController.Directions.Right)
+        {
+            target.x += DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if (pacmansDirection == NodeController.Directions.Up)
+        {
+            target.y += DISTANCE_BETWEEN_NODES * 2;
+        }
+        else if (pacmansDirection == NodeController.Directions.Down)
+        {
+            target.y -= DISTANCE_BETWEEN_NODES * 2;
+        }
+
+        float xDistance = target.x - _gameManager.Blinky.transform.position.x;
+        float yDistance = target.y - _gameManager.Blinky.transform.position.y;
+        Vector2 inkyTarget = new Vector2(target.x + xDistance, target.y + yDistance);
+
+        NodeController.Directions direction = GetClosestDirection(inkyTarget);
+        _movementController.SetDirection(direction);
+    }
+    private void determineClydeDirection()
+    {
+        float distance = Math.Abs(Vector2.Distance(_gameManager.Pacman.transform.position, transform.position));
+        //if Clyde is within 8 nodes of pacman, chase him using Blinky's Logic
+        if (distance <= DISTANCE_BETWEEN_NODES * 8)
+        {
+            determineBlinkyDirection();
+        }
+        else
+        {
+            //Scatter mode.
+            determineGhostScatterModeDirection();
+        }
     }
     private NodeController.Directions GetClosestDirection(Vector2 target)
     {

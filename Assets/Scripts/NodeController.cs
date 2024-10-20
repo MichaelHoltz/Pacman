@@ -17,8 +17,7 @@ public class NodeController : MonoBehaviour
     public bool IsWarpRightNode = false;
     public bool IsWarpLeftNode = false;
 
-    //If the node contains a pellet when the game starts
-    private bool IsPelletNode = false;
+
     //If the node sill has a pellet;
     private bool HasPellet = false;
 
@@ -42,9 +41,12 @@ public class NodeController : MonoBehaviour
     {
         if(transform.childCount > 0)
         {
-            IsPelletNode = true;
-            HasPellet = true;
+            if (!IsGhostStartingNode)// && gameObject.layer != 8)
+            {
+                HasPellet = true;
+            }
             pelletSprite = transform.GetComponentInChildren<SpriteRenderer>();
+            gameManager.GotPelletFromNodeController(this);
         }
 
         RaycastHit2D[] hitsDown;
@@ -159,7 +161,19 @@ public class NodeController : MonoBehaviour
         {
             HasPellet = false;
             pelletSprite.enabled = false;
-            gameManager.CollectedPellet(this);
+            StartCoroutine( gameManager.CollectedPellet(this));
+        }
+    }
+
+    public void RespawnPellet()
+    {
+        if (transform.childCount > 0)
+        {
+            if (!IsGhostStartingNode)// && gameObject.layer != 8)
+            {
+                HasPellet = true;
+                pelletSprite.enabled = true;
+            }
         }
     }
 
