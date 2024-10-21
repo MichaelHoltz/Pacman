@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
 using UnityEngine.UI;
 using TMPro;
-using static UnityEngine.CullingGroup;
 using System;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _siren;
     [SerializeField] private AudioSource _munch1;
     [SerializeField] private AudioSource _munch2;
+    [SerializeField] private AudioSource _death;
     private int _currentMunch = 0;
     private int _score = 0;
     private int _totalPellets = 0;
@@ -58,10 +57,15 @@ public class GameManager : MonoBehaviour
 
     public int Lives;
     public int currentLevel;
+    [SerializeField] private TextMeshProUGUI _gameOverText;
 
     [SerializeField] private Image _blackBackground;
     [SerializeField] private bool _testLevelCleared = false;
-
+    public int[] ghostModeTimers = new int[] { 7, 20, 7, 20, 5, 20, 5 };
+    public int ghostModeTimerIndex;
+    public float ghostModeTimer;
+    public bool runningTimer;
+    public bool completedTimer;
     public enum GhostMode
     {
         Chase,
@@ -85,6 +89,13 @@ public class GameManager : MonoBehaviour
     }
     private IEnumerator Setup()
     {
+        ghostModeTimerIndex = 0;
+        runningTimer = true; 
+        ghostModeTimer = 0;
+        completedTimer = false;
+        
+        _gameOverText.enabled = false;
+        
         //if pacman clears a level, a backgrouw will appear covering the level, and the game will pause for 0.1 seconds.
         if (clearedLevel)
         {
@@ -92,10 +103,11 @@ public class GameManager : MonoBehaviour
             //Activate background
             yield return new WaitForSeconds(0.1f);
             OnClearedLevel?.Invoke(this, EventArgs.Empty);
+            _pelletsLeft = _totalPellets;
         }
         _blackBackground.enabled = false;
 
-        _pelletsLeft = _totalPellets;
+        
 
         _pelletsCollectedOnThisLife = 0;
         CurrentGhostMode = GhostMode.Scatter;
@@ -152,10 +164,10 @@ public class GameManager : MonoBehaviour
     {
 
         _playerController.StopGame();
-        //BlinkyController.StopGame();
-        //PinkyController.StopGame();
-        //InkyController.StopGame();
-        //ClydeController.StopGame();
+        BlinkyController.StopGame();
+        PinkyController.StopGame();
+        InkyController.StopGame();
+        ClydeController.StopGame();
         gameIsRunning = false;
         _siren.Stop();
     }
@@ -167,7 +179,33 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!gameIsRunning)
+        {
+            return;
+        }
+        if (!completedTimer && runningTimer)
+        {
+            ghostModeTimer += Time.deltaTime;
+            if (ghostModeTimer >= ghostModeTimers[ghostModeTimerIndex])
+            {
+                ghostModeTimer = 0;
+                ghostModeTimerIndex++;
+                if(CurrentGhostMode == GhostMode.Chase)
+                {
+                    CurrentGhostMode = GhostMode.Scatter;
+                }
+                else
+                {
+                    CurrentGhostMode = GhostMode.Chase;
+                }
+                if(ghostModeTimerIndex == ghostModeTimers.Length)
+                {
+                    completedTimer = true;
+                    runningTimer = false;
+                    CurrentGhostMode = GhostMode.Chase;
+                }
+            }
+        }
     }
     public void GotPelletFromNodeController(NodeController nodeController)
     {
@@ -236,5 +274,29 @@ public class GameManager : MonoBehaviour
         //TODO check how many pellets are left
 
         //TODO is this a power pellet?
+    }
+
+    public IEnumerator PlayerEaten()
+    {
+        _hadDeathOnThisLevel = true;
+        stopGame();
+        yield return new WaitForSeconds(1);
+        BlinkyController.SetVisible(false);
+        PinkyController.SetVisible(false);
+        InkyController.SetVisible(false);
+        ClydeController.SetVisible(false);
+        Pacman.GetComponent<PlayerController>().Death();
+        _death.Play();
+        yield return new WaitForSeconds(3);
+        
+        Lives--;
+        if(Lives <= 0)
+        {
+            newGame = true;
+            //Display Game Over Text
+            _gameOverText.enabled = true;
+            yield return new WaitForSeconds(3);
+        }
+        StartCoroutine(Setup());
     }
 }

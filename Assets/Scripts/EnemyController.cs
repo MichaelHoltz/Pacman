@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Properties;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
 
     public enum GhostNodesStatesEnum
-    { 
+    {
         Respawning,
         LeftNode,
         RightNode,
@@ -17,7 +18,7 @@ public class EnemyController : MonoBehaviour
 
     }
     public enum GhostType
-    { 
+    {
         Blinky,
         Pinky,
         Inky,
@@ -29,7 +30,7 @@ public class EnemyController : MonoBehaviour
     private GhostNodesStatesEnum _respawnState;
     [SerializeField] private GhostType _ghostType;
 
-    
+
     [SerializeField] private GameObject _ghostNodeStart; //Blinky
     [SerializeField] private GameObject _ghostNodeCenter; //Pinky
     [SerializeField] private GameObject _ghostNodeLeft; //Inky
@@ -47,9 +48,18 @@ public class EnemyController : MonoBehaviour
     public int ScatterNodeIndex;
     private const float DISTANCE_BETWEEN_NODES = 0.35f;
     public bool LeftHomeBefore = false;
+    public bool isVisible = true;
+
+    public SpriteRenderer ghostSprite;
+    public SpriteRenderer eyesSprite;
+    public Animator animator;
+    public Color color;
 
     private void Awake()
     {
+        ghostSprite = GetComponent<SpriteRenderer>();
+        //eyesSprite = GetComponentInChildren<SpriteRenderer>();  
+        animator = GetComponentInChildren<Animator>();
         ScatterNodeIndex = 0;
         _gameManager.OnGameStart += GameManager_OnGameStart;
         switch (_ghostType)
@@ -78,6 +88,7 @@ public class EnemyController : MonoBehaviour
                 _startingNode = _ghostNodeRight;
                 break;
         }
+        ghostSprite.color = color;
 
     }
     public void StopGame()
@@ -87,12 +98,16 @@ public class EnemyController : MonoBehaviour
 
     public void Setup()
     {
+        animator.SetBool("moving", false);
+
+
         //Reset the ghosts back to their home position
         GhostNodesState = StartGhostNodesState;
         _movementController.CurrentNode = _startingNode;
         _movementController.LastMovingDirection = NodeController.Directions.None;
         _movementController.Direction = NodeController.Directions.None;
         transform.position = _startingNode.transform.position;
+        isVisible = true;
         //set their scatter node index to 0
         ScatterNodeIndex = 0;
         //set isFrightened to false
@@ -103,26 +118,21 @@ public class EnemyController : MonoBehaviour
             ReadyToLeaveHome = false;
             LeftHomeBefore = false;
         }
-        else if(_ghostType == GhostType.Blinky) 
+        else if (_ghostType == GhostType.Blinky)
         {
             ReadyToLeaveHome = true;
             LeftHomeBefore = true;
         }
-        else if(_ghostType == GhostType.Pinky)
+        else if (_ghostType == GhostType.Pinky)
         {
             ReadyToLeaveHome = true;
             LeftHomeBefore = false;
         }
         //_movementController.StartGame();
-        
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
 
 
     }
+
     private void GameManager_OnGameStart(object sender, EventArgs e)
     {
         //tell the Enemy Controller that movement can start
@@ -132,19 +142,50 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        //Show Ghost Sprite
+        if (isVisible)
+        {
+            ghostSprite.enabled = true;
+            eyesSprite.enabled = true;
+        }
+        //Hide Ghost Sprite
+        else
+        {
+            ghostSprite.enabled = false;
+            eyesSprite.enabled = false;
+        }
+
+
+        if (IsFrightened)
+        {
+            animator.SetBool("frightened", true);
+            eyesSprite.enabled = false;
+            ghostSprite.color = new Color(255, 255, 255, 255);
+        }
+        else
+        {
+            animator.SetBool("frightened", false);
+            eyesSprite.enabled = true;
+            ghostSprite.color = color;
+        }
+
         if (!_gameManager.gameIsRunning)
         {
             return;
         }
 
-        if(_testRespawn)
+
+        animator.SetBool("moving", true);
+
+
+        if (_testRespawn)
         {
             ReadyToLeaveHome = false;
             GhostNodesState = GhostNodesStatesEnum.Respawning;
             _testRespawn = false;
         }
 
-        if(_movementController.CurrentNode.GetComponent<NodeController>().IsSideNode)
+        if (_movementController.CurrentNode.GetComponent<NodeController>().IsSideNode)
         {
             _movementController.SetSpeed(1);
         }
@@ -189,7 +230,7 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
             case GhostNodesStatesEnum.Respawning:
-             
+
                 //we have reached our start node, move to the center node
                 if (transform.position.x == _ghostNodeStart.transform.position.x && transform.position.y == _ghostNodeStart.transform.position.y)
                 {
@@ -219,7 +260,7 @@ public class EnemyController : MonoBehaviour
                     GhostNodesState = _respawnState;
 
                 }
-                else 
+                else
                 {
                     //Determine quickest direction to home
                     direction = GetClosestDirection(_ghostNodeStart.transform.position);
@@ -233,12 +274,12 @@ public class EnemyController : MonoBehaviour
                 if (_gameManager.CurrentGhostMode == GameManager.GhostMode.Scatter)
                 {
                     determineGhostScatterModeDirection();
-                    
+
                 }
                 //Frightened Mode
                 else if (IsFrightened)
                 {
-                   // _allowReverseDirection
+                    // _allowReverseDirection
                     _movementController.SetDirection(getRandomDirection());
                 }
                 //Chase Mode
@@ -269,7 +310,7 @@ public class EnemyController : MonoBehaviour
     {
         List<NodeController.Directions> possibleDirections = new List<NodeController.Directions>();
         NodeController nodeController = _movementController.CurrentNode.GetComponent<NodeController>();
-        
+
         if (nodeController.CanMoveUp && _movementController.Direction != NodeController.Directions.Down)
         {
             possibleDirections.Add(NodeController.Directions.Up);
@@ -294,8 +335,8 @@ public class EnemyController : MonoBehaviour
         {
             return _movementController.Direction;
         }
-        
-        
+
+
     }
     private void determineGhostScatterModeDirection()
     {
@@ -309,10 +350,10 @@ public class EnemyController : MonoBehaviour
             }
             //Debug.Log($"ScatterNodeIndex: {ScatterNodeIndex}");
         }
-        
+
         NodeController.Directions direction = GetClosestDirection(scatterNodes[ScatterNodeIndex].transform.position);
         _movementController.SetDirection(direction);
-        
+
     }
     private void determineBlinkyDirection()
     {
@@ -322,14 +363,14 @@ public class EnemyController : MonoBehaviour
     private void determinePinkyDirection()
     {
         NodeController.Directions pacmansDirection = _gameManager.Pacman.GetComponent<MovementController>().LastMovingDirection;
-        
+
         Vector2 target = _gameManager.Pacman.transform.position;
 
         if (pacmansDirection == NodeController.Directions.Left)
-        { 
-           target.x -= DISTANCE_BETWEEN_NODES * 2;
+        {
+            target.x -= DISTANCE_BETWEEN_NODES * 2;
         }
-        else if(pacmansDirection == NodeController.Directions.Right)
+        else if (pacmansDirection == NodeController.Directions.Right)
         {
             target.x += DISTANCE_BETWEEN_NODES * 2;
         }
@@ -347,7 +388,7 @@ public class EnemyController : MonoBehaviour
     private void determinInkyDirection()
     {
         NodeController.Directions pacmansDirection = _gameManager.Pacman.GetComponent<MovementController>().LastMovingDirection;
-        
+
         Vector2 target = _gameManager.Pacman.transform.position;
 
         if (pacmansDirection == NodeController.Directions.Left)
@@ -396,7 +437,7 @@ public class EnemyController : MonoBehaviour
         NodeController.Directions newDirection = NodeController.Directions.None;
         //if we can move up and not reversing
         if (nodeController.CanMoveUp && lastMovingDirection != NodeController.Directions.Down)
-        { 
+        {
             //Get the node above us
             GameObject node = nodeController.NodeUp;
 
@@ -404,7 +445,7 @@ public class EnemyController : MonoBehaviour
             float distance = Vector2.Distance(node.transform.position, target);
 
             //if this is the shortest distance so far, set our direction
-            if(distance < shortestDistance || shortestDistance == 0)
+            if (distance < shortestDistance || shortestDistance == 0)
             {
                 shortestDistance = distance;
                 newDirection = NodeController.Directions.Up;
@@ -460,5 +501,28 @@ public class EnemyController : MonoBehaviour
         }
 
         return newDirection;
+    }
+    public void SetVisible(bool newIsVisible)
+    { 
+        isVisible = newIsVisible;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //If player
+        if (collision.gameObject.layer == 7 )
+        {
+            //Get Eaten
+            if (IsFrightened)
+            {
+
+            }
+            //Eat Player
+            else
+            { 
+                StartCoroutine(_gameManager.PlayerEaten());
+            }
+
+        }
     }
 }

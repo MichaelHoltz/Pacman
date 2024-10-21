@@ -31,29 +31,37 @@ public class PlayerController : MonoBehaviour
     {
         movementController.CurrentNode = _startNode;
         transform.position = _startNode.transform.position;
-        movementController.LastMovingDirection = NodeController.Directions.Left;
+        movementController.Direction = NodeController.Directions.None;
+        movementController.LastMovingDirection = NodeController.Directions.None; 
 
         animator.SetInteger("direction", 0);
         animator.SetBool("moving", false);
+        animator.SetBool("dead", false);
+        animator.speed = 0f;
         //playerInputActions.Player.Disable();
-        
+
+
     }
 
     public void StartGame()
     {
         //Direction Left
+        movementController.Direction = NodeController.Directions.Left;
         movementController.LastMovingDirection = NodeController.Directions.Left;
         animator.SetInteger("direction", 1);
         animator.SetBool("moving", true);
+        animator.speed = 1f;
         playerInputActions.Player.Enable();
     }
     public void StopGame()
     { 
         movementController.StopGame();
-        
-        movementController.LastMovingDirection = NodeController.Directions.None;
-        animator.SetInteger("direction", 0);
-        animator.SetBool("moving", false);
+        //movementController.Direction = NodeController.Directions.None;
+        //movementController.LastMovingDirection = NodeController.Directions.None;
+        //animator.SetInteger("direction", 0);
+        //animator.SetBool("moving", false);
+        animator.speed = 0f;
+
     }
     // Update is called once per frame
     void Update()
@@ -109,5 +117,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    public void Death()
+    { 
+        animator.SetBool("moving", false);
+        animator.SetBool("dead", true);
+        animator.speed = 1f;
+    }
 }
