@@ -15,12 +15,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _munch1;
     [SerializeField] private AudioSource _munch2;
     [SerializeField] private AudioSource _death;
+    [SerializeField] private AudioSource powerPelletAudio;
     private int _currentMunch = 0;
     private int _score = 0;
     private int _totalPellets = 0;
     private int _pelletsLeft = 0;
     private int _pelletsCollectedOnThisLife = 0;
     private bool _hadDeathOnThisLevel = false;
+
 
     [SerializeField] private TextMeshProUGUI _scoreText;
 
@@ -66,6 +68,11 @@ public class GameManager : MonoBehaviour
     public float ghostModeTimer;
     public bool runningTimer;
     public bool completedTimer;
+
+    public bool IsPowerPelletRunning = false;
+    private float _currentPowerPelletTime = 0;
+    public float PowerPelletTimer = 8f;
+    public int powerPelletMultiplier = 1;
     public enum GhostMode
     {
         Chase,
@@ -206,6 +213,18 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        if (IsPowerPelletRunning)
+        { 
+            _currentPowerPelletTime += Time.deltaTime;
+            if (_currentPowerPelletTime >= PowerPelletTimer)
+            { 
+                _currentPowerPelletTime = 0;
+                powerPelletAudio.Stop();
+                _siren.Play();
+                powerPelletMultiplier = 1;
+
+            }
+        }
     }
     public void GotPelletFromNodeController(NodeController nodeController)
     {
@@ -274,6 +293,19 @@ public class GameManager : MonoBehaviour
         //TODO check how many pellets are left
 
         //TODO is this a power pellet?
+        if (nodeController.IsPowerPellet)
+        {
+            _siren.Stop();
+            powerPelletAudio.Play();
+            IsPowerPelletRunning = true;
+            _currentPowerPelletTime = 0;
+
+            BlinkyController.SetFrightened(true);
+            PinkyController.SetFrightened(true);
+            InkyController.SetFrightened(true);
+            ClydeController.SetFrightened(true);
+
+        }
     }
 
     public IEnumerator PlayerEaten()

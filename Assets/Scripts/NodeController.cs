@@ -27,7 +27,8 @@ public class NodeController : MonoBehaviour
     [SerializeField] private GameManager gameManager;
 
     public bool IsSideNode = false;
-
+    public bool IsPowerPellet = false;
+    public float PowerPelletBlinkingTimer = 0;
     public enum Directions
     {
         None,
@@ -127,7 +128,20 @@ public class NodeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(!gameManager.gameIsRunning)
+        {
+            return;
+        }
+        if (IsPowerPellet && HasPellet)
+        {
+            PowerPelletBlinkingTimer += Time.deltaTime;
+            if ((PowerPelletBlinkingTimer >= 0.3f))
+            {
+                PowerPelletBlinkingTimer = 0;
+                pelletSprite.enabled = !pelletSprite.enabled;
+            }
+        }
+
     }
 
     public GameObject GetNodeFromDirection(Directions direction)

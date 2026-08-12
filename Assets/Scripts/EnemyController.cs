@@ -142,6 +142,10 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (!_gameManager.IsPowerPelletRunning)
+        { 
+            IsFrightened = false;
+        }
         //Show Ghost Sprite
         if (isVisible)
         {
@@ -193,6 +197,11 @@ public class EnemyController : MonoBehaviour
         {
             _movementController.SetSpeed(2);
         }
+    }
+
+    public void SetFrightened(bool frightened)
+    {
+        IsFrightened = frightened;
     }
 
     public void ReachedCenterOfNode(NodeController nodeController)
